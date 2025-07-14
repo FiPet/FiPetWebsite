@@ -36,7 +36,7 @@ const Herosection1: React.FC = () => {
   };
 
   return (
-    <div className="w-full bg-[#FFF8ECBF] px-4 sm:px-10 lg:px-20 py-8 sm:py-20">
+    <div className="w-full bg-[#FFF8EC] px-4 sm:px-10 lg:px-20 py-24 sm:py-24">
       <div className="relative">
         {/* Section 1: Purple Gradient */}
         <section className="relative min-h-screen sm:min-h-[622px] px-6 sm:px-8 lg:px-20 py-12 sm:py-10 bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] rounded-[20px] sm:rounded-[30px] shadow-inner">

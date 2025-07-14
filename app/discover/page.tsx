@@ -1,9 +1,8 @@
 import DiscoverSection1 from "@/components/Discoversection1";
 
-// app/contact/page.tsx
-export default function Discoverpage() {
+export default function DiscoverPage() {
   return (
-    <div className=" relative bg-background">
+    <div className=" w-full bg-[#FFF8EC]  ">
       <DiscoverSection1/>
     </div>
   );

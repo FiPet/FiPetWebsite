@@ -7,7 +7,7 @@ const SocialIconLink = ({ href, src, alt }: { href: string; src: string; alt: st
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className={`w-8 h-8 ${styles.socialIconBg} rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors`}
+    className={`w-8 h-8 rounded-full bg-gradient-to-r from-[#C779FD] via-[#7253F3] to-[#1666E6] flex items-center justify-center`}
   >
     <Image src={src} alt={alt} width={20} height={20} />
   </a>
