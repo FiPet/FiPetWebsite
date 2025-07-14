@@ -50,7 +50,7 @@ const Navbar : React.FC = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex flex-1 pl-10 justify-start items-center gap-10 text-purple-500 capitalize text-[16px] ">
-          <Link href="/">Discover</Link>
+          <Link href="/discover">Discover</Link>
           <Link href="/team">Team</Link>
           <Link href="/contact">Contact Us</Link>
         </div>
@@ -69,7 +69,7 @@ const Navbar : React.FC = () => {
 
 
   <div className="  flex flex-col px-6 py-4 space-y-4 text-[#8F48FD] text-[16px] capitalize   z-40  ">
-    <Link href="/" onClick={() => setMobileOpen(false)}>Discover</Link>
+    <Link href="/discover" onClick={() => setMobileOpen(false)}>Discover</Link>
     <Link href="/team" onClick={() => setMobileOpen(false)}>Team</Link>
     <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact Us</Link>
   </div>
