@@ -20,29 +20,31 @@ const MobileFooter = () => {
                         </p>
                     </div>
 
-                    <div>
-                        <h3 className="mb-4 text-sm font-semibold text-white uppercase">Company</h3>
-                        <ul className="space-y-2 text-gray-200">
-                            <li><a href="#" className="hover:underline">About Us</a></li>
-                            <li><a href="#" className="hover:underline">Team</a></li>
-                        </ul>
-                    </div>
+                    <div className="flex justify-between md:grid md:grid-cols-3 md:col-span-3 gap-8">
+                        <div>
+                            <h3 className="mb-4 text-sm font-semibold text-white uppercase">Company</h3>
+                            <ul className="space-y-2 text-gray-200">
+                                <li><a href="#" className="hover:underline">About Us</a></li>
+                                <li><a href="#" className="hover:underline">Team</a></li>
+                            </ul>
+                        </div>
 
-                    <div>
-                        <h3 className="mb-4 text-sm font-semibold text-white uppercase">Product</h3>
-                        <ul className="space-y-2 text-gray-200">
-                            <li><a href="#" className="hover:underline">Explore</a></li>
-                            <li><a href="#" className="hover:underline">Waitlist</a></li>
-                        </ul>
-                    </div>
+                        <div>
+                            <h3 className="mb-4 text-sm font-semibold text-white uppercase">Product</h3>
+                            <ul className="space-y-2 text-gray-200">
+                                <li><a href="#" className="hover:underline">Explore</a></li>
+                                <li><a href="#" className="hover:underline">Waitlist</a></li>
+                            </ul>
+                        </div>
 
-                    <div>
-                        <h3 className="mb-4 text-sm font-semibold text-white uppercase">Connect</h3>
-                        <ul className="space-y-2 text-gray-200">
-                            <li><a href="#" className="hover:underline">LinkedIn</a></li>
-                            <li><a href="#" className="hover:underline">Instagram</a></li>
-                            <li><a href="#" className="hover:underline">TikTok</a></li>
-                        </ul>
+                        <div>
+                            <h3 className="mb-4 text-sm font-semibold text-white uppercase">Connect</h3>
+                            <ul className="space-y-2 text-gray-200">
+                                <li><a href="#" className="hover:underline">LinkedIn</a></li>
+                                <li><a href="#" className="hover:underline">Instagram</a></li>
+                                <li><a href="#" className="hover:underline">TikTok</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

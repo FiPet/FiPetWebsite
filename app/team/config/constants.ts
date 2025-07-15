@@ -14,7 +14,7 @@ const appDevTeam: TeamMember = {
 };
 
 const uiTeam: TeamMember = {
-  teamName: "UI and Graphic Design",
+  teamName: "UI/Graphic Design",
   teamMembers: ["Divya Mulpuri", "Julienne Strydom", "Katherine Garland"],
 };
 
@@ -24,64 +24,64 @@ const marketingTeam: TeamMember = {
 };
 
 const webDevTeam: TeamMember = {
-  teamName: "Website Development",
-  teamMembers: ["Jitesh Dnyandeo", "Sahil Khunt", "Sameer Mohammed", "Shengkuo Lin"],
+  teamName: "Website Dev",
+  teamMembers: ["Jitesh Dnyandeo", "Sameer Mohammed", "Shengkuo Lin"],
 };
 
 export const teams: TeamMember[] = [appDevTeam, uiTeam, marketingTeam, webDevTeam];
 
 export const teamHeads: TeamHead[] = [
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Sameer Bhatia",
     title: "CEO",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Soham Kundu",
     title: "CTO",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Mehtab Sandhu",
     title: "Head of Mobile App Dev ",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Archit Mandepally",
     title: "Head of Mobile App Dev",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Ben Hurwitz",
     title: "Head of Graphic Design",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Jayla Daniels",
     title: "Head of Marketing",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Vedant Patel",
     title: "Head of Website Dev ",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: null,
+    photo: "/pfp1.png",
     name: "Sahil Khunt ",
     title: "Head of Website Dev ",
     linkedinLink: "https://www.linkedin.com/",
