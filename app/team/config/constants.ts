@@ -28,7 +28,12 @@ const webDevTeam: TeamMember = {
   teamMembers: ["Jitesh Dnyandeo", "Sameer Mohammed", "Shengkuo Lin"],
 };
 
-export const teams: TeamMember[] = [appDevTeam, uiTeam, marketingTeam, webDevTeam];
+export const teams: TeamMember[] = [
+  appDevTeam,
+  uiTeam,
+  marketingTeam,
+  webDevTeam,
+];
 
 export const teamHeads: TeamHead[] = [
   {

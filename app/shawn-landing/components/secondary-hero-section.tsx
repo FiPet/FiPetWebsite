@@ -21,7 +21,9 @@ export default function SecondaryHeroSection() {
           Evolve.
         </h1>
         <p>[Copy that goes a little more into the mechanics of FiPet]</p>
-        <p className="text-center">[re-arrange this section when we figure out the copy]</p>
+        <p className="text-center">
+          [re-arrange this section when we figure out the copy]
+        </p>
       </div>
 
       {/* images */}

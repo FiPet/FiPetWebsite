@@ -2,7 +2,15 @@ import Image from "next/image";
 import { TeamHead } from "../config/interfaces";
 import styles from "../page.module.css";
 
-const SocialIconLink = ({ href, src, alt }: { href: string; src: string; alt: string }) => (
+const SocialIconLink = ({
+  href,
+  src,
+  alt,
+}: {
+  href: string;
+  src: string;
+  alt: string;
+}) => (
   <a
     href={href}
     target="_blank"
@@ -13,13 +21,21 @@ const SocialIconLink = ({ href, src, alt }: { href: string; src: string; alt: st
   </a>
 );
 
-export default function TeamHeadCard({ photo, name, title, linkedinLink, socialLink }: TeamHead) {
+export default function TeamHeadCard({
+  photo,
+  name,
+  title,
+  linkedinLink,
+  socialLink,
+}: TeamHead) {
   const photoSizeSm = 192; // px
   const photoSizeLg = 256; // px
   return (
     <div className={`rounded-2xl flex flex-col items-start`}>
       {/* profile photo and gradient border */}
-      <div className={`relative p-[2px] rounded-2xl mb-4 w-full bg-gradient-to-r from-[#C76AFD] to-[#387EE9]`}>
+      <div
+        className={`relative p-[2px] rounded-2xl mb-4 w-full bg-gradient-to-r from-[#C76AFD] to-[#387EE9]`}
+      >
         <div className="aspect-square rounded-2xl overflow-hidden">
           {photo ? (
             <Image
@@ -44,9 +60,19 @@ export default function TeamHeadCard({ photo, name, title, linkedinLink, socialL
 
       {/* social icons */}
       <div className="flex justify-start gap-1 hidden sm:flex">
-        {linkedinLink && <SocialIconLink href={linkedinLink} src="/assets/linkedin/InBug-White.png" alt="LinkedIn" />}
+        {linkedinLink && (
+          <SocialIconLink
+            href={linkedinLink}
+            src="/assets/linkedin/InBug-White.png"
+            alt="LinkedIn"
+          />
+        )}
         {socialLink && (
-          <SocialIconLink href={socialLink} src="/assets/ig/02_White_Glyph/Instagram_Glyph_White.svg" alt="Instagram" />
+          <SocialIconLink
+            href={socialLink}
+            src="/assets/ig/02_White_Glyph/Instagram_Glyph_White.svg"
+            alt="Instagram"
+          />
         )}
       </div>
     </div>
