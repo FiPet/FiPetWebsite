@@ -4,7 +4,7 @@ const socialLinksData = [
   {
     key: "linkedin",
     href: "https://www.linkedin.com/company/fipet/",
-    img: "/assets/linkedin/InBug-White.png",
+    img: "/assets/linkedin/InBug-White.svg",
     alt: "LinkedIn icon",
   },
   {
@@ -15,7 +15,7 @@ const socialLinksData = [
   },
   {
     key: "tiktok",
-    href: "https://www.instagram.com/fipetapp/",
+    href: "https://www.tiktok.com/@fipetapp?lang=en",
     img: "/assets/tiktok/TIKTOK_SOCIAL_ICONS/TIKTOK_SOCIAL_ICONS_CIRCLE/SVG/TIKTOK_SOCIAL_ICON_CIRCLE_BLACK.svg",
     alt: "TikTok icon",
   },

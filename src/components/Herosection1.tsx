@@ -56,7 +56,7 @@ const Herosection1: React.FC = () => {
               <div className="flex justify-center mt-8 mb-8 sm:hidden">
                 <div className="relative w-[250px] h-[400px]">
                   <Image
-                    src="/phone.png"
+                    src="/phone.svg"
                     alt="FiPet Phone App"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -116,7 +116,7 @@ const Herosection1: React.FC = () => {
               <div className="flex justify-center mt-6 sm:hidden">
                 <div className="relative w-15 h-10">
                   <Image
-                    src="/arrow.png"
+                    src="/arrow.svg"
                     alt="Arrow down"
                     fill
                     className="object-contain"
@@ -185,7 +185,7 @@ const Herosection1: React.FC = () => {
         <div className="hidden sm:block absolute top-75 xl:top-30 z-0 sm:right-1/2 sm:translate-x-1/2 lg:right-[20px] lg:translate-x-0">
           <div className="relative sm:w-[280px] sm:h-[460px] md:w-[350px] md:h-[575px] lg:w-[600px] lg:h-[985px] xl:w-[800px] xl:h-[1100px]">
             <Image
-              src="/phone.png"
+              src="/phone.svg"
               alt="FiPet Phone App"
               fill
               className="object-contain drop-shadow-2xl"

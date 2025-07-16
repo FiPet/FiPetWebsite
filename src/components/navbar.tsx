@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <Link href="/">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="FiPet Logo"
                 width={122}
                 height={57}
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:block">
             <Link href="/">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="FiPet Logo"
                 width={122}
                 height={57}

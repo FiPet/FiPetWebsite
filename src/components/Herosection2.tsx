@@ -34,7 +34,7 @@ const Herosection2: React.FC = () => {
       <div className="flex justify-center px-6 pb-16 md:pb-24">
         <div className="relative w-full ">
           <Image
-            src="/assets/landing/phones.png"
+            src="/assets/landing/phones.svg"
             alt="FiPet app screens on three phones"
             layout="responsive"
             width={imgWidth}
@@ -65,7 +65,7 @@ const Herosection2: React.FC = () => {
         {/* — Image block — */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
-            src="/assets/landing/3D-Icon.png"
+            src="/assets/landing/3D-Icon.svg"
             alt="FiPet app mockup"
             width={400}
             height={400}

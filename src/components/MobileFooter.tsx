@@ -22,12 +22,12 @@ const MobileFooter = () => {
               </h3>
               <ul className="space-y-2 text-gray-200">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/" className="hover:underline">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/team" className="hover:underline">
                     Team
                   </a>
                 </li>
@@ -45,7 +45,10 @@ const MobileFooter = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://tally.so/r/mB5ex4"
+                    className="hover:underline"
+                  >
                     Waitlist
                   </a>
                 </li>
@@ -58,17 +61,26 @@ const MobileFooter = () => {
               </h3>
               <ul className="space-y-2 text-gray-200">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.linkedin.com/company/fipet/"
+                    className="hover:underline"
+                  >
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.instagram.com/fipetapp/"
+                    className="hover:underline"
+                  >
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.tiktok.com/@fipetapp?lang=en"
+                    className="hover:underline"
+                  >
                     TikTok
                   </a>
                 </li>
