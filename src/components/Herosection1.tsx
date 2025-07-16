@@ -56,7 +56,7 @@ const Herosection1: React.FC = () => {
               <div className="flex justify-center mt-8 mb-8 sm:hidden">
                 <div className="relative w-[250px] h-[400px]">
                   <Image
-                    src="/phone.svg"
+                    src="/phone.png"
                     alt="FiPet Phone App"
                     fill
                     className="object-contain drop-shadow-2xl"

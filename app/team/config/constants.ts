@@ -20,7 +20,13 @@ const uiTeam: TeamMember = {
 
 const marketingTeam: TeamMember = {
   teamName: "Marketing",
-  teamMembers: ["First last", "First last", "First last"],
+  teamMembers: [
+    "Ben Scruton",
+    "Dhruv Nagpal",
+    "Jayla Daniels",
+    "Noah Balicki",
+    "Sophia Zaydon",
+  ],
 };
 
 const webDevTeam: TeamMember = {
