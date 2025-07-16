@@ -6,7 +6,7 @@ import Discover3BottomButton from "./discover3/bottom-button";
 
 export default function DiscoverSec3() {
   return (
-    <div className="bg-[#FFF8EC] py-16">
+    <div className="bg-[#FFF8EC] pt-16">
       {/* title */}
       <div className="text-center">
         <h1 className="text-6xl font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent inline-block">
@@ -36,8 +36,13 @@ export default function DiscoverSec3() {
       <div className="mx-auto mt-16 flex max-w-6xl flex-row items-center gap-12">
         <ul className="space-y-4 text-lg font-medium text-[#8F48FD] ml-[9%] w-1/2">
           <li>300+ unique quests by launch</li>
-          <li>100+ creator partners posting daily content and driving growth</li>
-          <li>Strategic partnerships with educators, creators, and teen-focused communities</li>
+          <li>
+            100+ creator partners posting daily content and driving growth
+          </li>
+          <li>
+            Strategic partnerships with educators, creators, and teen-focused
+            communities
+          </li>
         </ul>
 
         <div className="relative h-56 w-56 md:h-64 md:w-64">
@@ -57,10 +62,12 @@ export default function DiscoverSec3() {
         <IntroCard>
           <h3 className="mb-6 text-2xl font-semibold">Our Mission</h3>
           <p className="text-base leading-relaxed">
-            Make financial literacy fun, accessible, and unforgettable for the next generation. Equip every teen with
-            core money skills before they turn 18
+            Make financial literacy fun, accessible, and unforgettable for the
+            next generation. Equip every teen with core money skills before they
+            turn 18
             <br />
-            Replace outdated finance lessons with gamified, habit-forming experiences
+            Replace outdated finance lessons with gamified, habit-forming
+            experiences
           </p>
         </IntroCard>
 
@@ -69,7 +76,8 @@ export default function DiscoverSec3() {
           <p className="text-base leading-relaxed">
             A team of student founders, engineers, designers, and creators
             <br />
-            Working across time zones with a shared goal: to change how money is learned
+            Working across time zones with a shared goal: to change how money is
+            learned
           </p>
           <div className="flex justify-center">
             <LearnMoreButton />
@@ -82,8 +90,13 @@ export default function DiscoverSec3() {
         <div className="mx-auto flex max-w-6xl justify-center items-center gap-4 flex-col md:flex-row">
           <p className="px-6 py-2 text-white text-2xl">Get involved!</p>
           <Discover3BottomButton text="Join the waitlist" onClick={() => {}} />
-          <Discover3BottomButton text="Apply as a creator intern" onClick={() => {}} />
-          <p className="px-6 py-2 text-end">Partnerships, press, or investing</p>
+          <Discover3BottomButton
+            text="Apply as a creator intern"
+            onClick={() => {}}
+          />
+          <p className="px-6 py-2 text-end">
+            Partnerships, press, or investing
+          </p>
         </div>
       </div>
     </div>

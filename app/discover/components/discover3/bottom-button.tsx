@@ -5,7 +5,10 @@ type Discover3BottomButtonProps = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
-export default function Discover3BottomButton({ text, onClick }: Discover3BottomButtonProps) {
+export default function Discover3BottomButton({
+  text,
+  onClick,
+}: Discover3BottomButtonProps) {
   return (
     <button
       onClick={onClick}
