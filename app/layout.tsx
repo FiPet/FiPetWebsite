@@ -1,3 +1,4 @@
+import "./globals.css";
 import Navbar from "@/components/navbar";
 import MobileFooter from "@/components/MobileFooter";
 
