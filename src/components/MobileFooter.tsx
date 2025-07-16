@@ -1,8 +1,9 @@
 import React from "react";
+import Link from "next/link";
 
 const MobileFooter = () => {
   return (
-    <footer className="bg-background  px-6 py-12">
+    <footer className="bg-background px-6 py-12">
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="md:col-span-2 space-y-4">
@@ -22,14 +23,14 @@ const MobileFooter = () => {
               </h3>
               <ul className="space-y-2 text-gray-200">
                 <li>
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/team" className="hover:underline">
+                  <Link href="/team" className="hover:underline">
                     Team
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -89,7 +90,7 @@ const MobileFooter = () => {
           </div>
         </div>
 
-        <div className="mt-12  pt-6 flex flex-col md:flex-row justify-between items-center text-gray-200 text-sm">
+        <div className="mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-200 text-sm">
           <span>©2025 FiPet</span>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:underline">
