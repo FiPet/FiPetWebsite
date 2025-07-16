@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import MobileFooter from "@/components/MobileFooter";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -12,6 +13,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <MobileFooter />
+        <Analytics />
       </body>
     </html>
   );
