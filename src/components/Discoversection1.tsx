@@ -6,7 +6,7 @@ const DiscoverSection1: React.FC = () => {
   return (
     <>
       {" "}
-      <section className="relative w-full overflow-hidden bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] min-h-[500px] md:min-h-[600px] lg:h-[728px] flex flex-col lg:flex-row">
+      <section className="relative w-full overflow-hidden bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] min-h-[500px] md:min-h-[600px] lg:h-[728px] flex flex-col lg:flex-row pt-12">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 flex items-center justify-center px-6 sm:px-12 md:px-16 lg:px-26 pt-12 lg:pt-0">
           <h1 className="text-white font-semibold leading-[108%] tracking-normal font-poppins text-5xl md:text-7xl xl:text-[118px] max-w-[600px] text-center lg:text-left">
