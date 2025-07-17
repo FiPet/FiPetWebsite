@@ -2,7 +2,7 @@
 import Image from "next/image";
 import IntroCard from "./discover3/intro-card";
 import LearnMoreButton from "./discover3/learn-more-button";
-import Discover3BottomButton from "./discover3/bottom-button";
+import DiscoverActionButton from "./discover3/action-button";
 
 export default function DiscoverSec3() {
   return (
@@ -88,15 +88,18 @@ export default function DiscoverSec3() {
       {/* actions */}
       <div className="mt-20 bg-gradient-to-r from-[#F97216] to-[#F99B16] px-4 py-6 text-white">
         <div className="mx-auto flex max-w-6xl justify-center items-center gap-4 flex-col md:flex-row">
-          <p className="px-6 py-2 text-white text-2xl">Get involved!</p>
-          <Discover3BottomButton text="Join the waitlist" onClick={() => {}} />
-          <Discover3BottomButton
+          <p className="px-6 py-2 text-white text-3xl font-light whitespace-nowrap">
+            Get involved!
+          </p>
+          <DiscoverActionButton text="Join the waitlist" onClick={() => {}} />
+          <DiscoverActionButton
             text="Apply as a creator intern"
             onClick={() => {}}
           />
-          <p className="px-6 py-2 text-end">
-            Partnerships, press, or investing
-          </p>
+          <DiscoverActionButton
+            text="Partnerships, press, or investing"
+            onClick={() => {}}
+          />
         </div>
       </div>
     </div>
