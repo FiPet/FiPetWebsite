@@ -5,7 +5,7 @@ type Discover3BottomButtonProps = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
-export default function Discover3BottomButton({
+export default function DiscoverActionButton({
   text,
   onClick,
 }: Discover3BottomButtonProps) {
@@ -14,17 +14,12 @@ export default function Discover3BottomButton({
       onClick={onClick}
       className={`
         mx-auto flex justify-center items-center
-        py-2 px-12 rounded-full font-bold
-        bg-gradient-to-b from-[#FBA94C] via-[#F98513] to-[#F97D14]
+        py-2 rounded-full w-full
+        bg-transparent font-light text-white
         overflow-hidden cursor-pointer
+        border border-white/30
+        shadow-[0_0_0_1.5px_rgba(255,255,255,0.3),inset_0_2px_3px_rgba(255,255,255,0.4),inset_0_0_20px_10px_rgba(0,0,0,0.1)]
       `}
-      style={{
-        boxShadow: `
-          0 0 0 3px rgba(255,255,255,0.35),
-          0 6px 40px 6px #fbb957 inset, 
-          0 1.5px 36px 0px #0008 inset
-        `,
-      }}
     >
       {text}
     </button>
