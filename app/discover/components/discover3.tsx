@@ -86,7 +86,7 @@ export default function DiscoverSec3() {
       </div>
 
       {/* actions */}
-      <div className="mt-20 bg-gradient-to-r from-[#F97216] to-[#F99B16] px-4 py-6 text-white">
+      <div className="mt-20 bg-gradient-to-r from-[#F97216] to-[#F99B16] px-4 py-2 text-white">
         <div className="mx-auto flex max-w-6xl justify-center items-center gap-4 flex-col md:flex-row">
           <p className="px-6 py-2 text-white text-3xl font-light whitespace-nowrap">
             Get involved!
