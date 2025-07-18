@@ -7,16 +7,7 @@
 }
 
 .gradientContainer {
-  background:
-    /* purple to blue */
-    linear-gradient(to right, #E6BEFE, #90B8F0),
-
-    /* darken the colors */
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%),
-    linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%),
-
-    /* lighting */
-    linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
-
-  background-blend-mode: normal, multiply, multiply, screen;
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.48)),
+    linear-gradient(to right, #BB48FD, #0A61E4);
 }
