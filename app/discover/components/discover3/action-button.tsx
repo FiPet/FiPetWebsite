@@ -17,7 +17,8 @@ export default function DiscoverActionButton({
         py-2 rounded-full w-full
         bg-transparent font-light text-white
         overflow-hidden cursor-pointer
-        border border-white/30
+        bg-white/5 border border-white/20 
+        backdrop-blur-[7.5px] 
         shadow-[0_0_0_1.5px_rgba(255,255,255,0.3),inset_0_2px_3px_rgba(255,255,255,0.4),inset_0_0_20px_10px_rgba(0,0,0,0.1)]
       `}
     >
