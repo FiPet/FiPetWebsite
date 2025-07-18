@@ -59,7 +59,7 @@ export default function TeamHeadCard({
       </div>
 
       {/* social icons */}
-      <div className="flex justify-start gap-1 hidden sm:flex">
+      <div className="flex gap-1 mx-auto sm:mx-0">
         {linkedinLink && (
           <SocialIconLink
             href={linkedinLink}
