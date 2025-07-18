@@ -7,7 +7,7 @@ export default function TeamMembersPanel({
   teamMembers,
 }: TeamMember) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-start sm:items-center">
       <div className="w-32 h-32 rounded-full bg-gradient-to-r from-[#8F48FD] to-[#8FA9FD] flex items-center justify-center my-4 aspect-square">
         <Image
           src={image}
