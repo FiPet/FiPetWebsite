@@ -1,4 +1,5 @@
 export interface TeamMember {
+  image: string;
   teamName: string;
   teamMembers: string[];
 }

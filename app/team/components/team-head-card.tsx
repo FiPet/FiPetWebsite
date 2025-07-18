@@ -53,7 +53,7 @@ export default function TeamHeadCard({
       </div>
 
       {/* name and title */}
-      <div className="text-start mb-3">
+      <div className="mb-3 text-center sm:text-start mx-auto sm:mx-0">
         <h3 className="font-semibold text-lg">{name}</h3>
         <p className="text-sm">{title}</p>
       </div>

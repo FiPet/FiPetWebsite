@@ -1,6 +1,7 @@
 import { TeamHead, TeamMember } from "./interfaces";
 
 const appDevTeam: TeamMember = {
+  image: "/assets/discover/phone.svg",
   teamName: "App Development",
   teamMembers: [
     "Arnav Mohanty",
@@ -14,11 +15,13 @@ const appDevTeam: TeamMember = {
 };
 
 const uiTeam: TeamMember = {
+  image: "/assets/discover/pen.svg",
   teamName: "UI/Graphic Design",
   teamMembers: ["Divya Mulpuri", "Julienne Strydom", "Katherine Garland"],
 };
 
 const marketingTeam: TeamMember = {
+  image: "/assets/discover/camera.svg",
   teamName: "Marketing",
   teamMembers: [
     "Ben Scruton",
@@ -30,6 +33,7 @@ const marketingTeam: TeamMember = {
 };
 
 const webDevTeam: TeamMember = {
+  image: "/assets/discover/arrow.svg",
   teamName: "Website Dev",
   teamMembers: ["Jitesh Dnyandeo", "Sameer Mohammed", "Shengkuo Lin"],
 };
