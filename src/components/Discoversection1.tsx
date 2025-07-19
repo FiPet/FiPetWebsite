@@ -39,7 +39,8 @@ const DiscoverSection1: React.FC = () => {
         {/* Bottom Grid: Left box + Right text */}
         <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:items-start gap-20">
           {/* Left Gray Box */}
-          <div className="w-[300px] h-[180px] sm:w-[400px] sm:h-[200px] lg:w-[472px] lg:h-[228px] bg-[#D9D9D9]" />
+          <Image src={"/assets/discover/cat_image_left.png"} alt="FiPet Character" width={200} height={100} className="w-[200px] h-[200px] sm:w-[400px] sm:h-[250px] lg:w-[472px] lg:h-[300px] " />
+          {/* <div className="w-[300px] h-[180px] sm:w-[400px] sm:h-[200px] lg:w-[472px] lg:h-[228px] bg-[#D9D9D9]" /> */}
 
           {/* Right Text */}
           <p className=" text-2xl md:text-[32px] leading-[142%] max-w-xl text-left">
