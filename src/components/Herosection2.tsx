@@ -32,10 +32,23 @@ const Herosection2: React.FC = () => {
 
       {/* Combined phones image */}
       <div className="flex justify-center px-6 pb-16 md:pb-24">
-        <div className="relative w-full ">
+        {/* mobile phones */}
+        <div className="relative w-full md:hidden">
           <Image
             src="/assets/landing/phones.png"
-            alt="FiPet app screens on three phones"
+            alt="FiPet app screens on phones (mobile view)"
+            layout="responsive"
+            width={imgWidth}
+            height={imgHeight}
+            className="drop-shadow-2xl"
+            priority
+          />
+        </div>
+        {/* desktop phones */}
+        <div className="hidden relative w-full md:block">
+          <Image
+            src="/assets/landing/phones.svg"
+            alt="FiPet app screens on phones (desktop view)"
             layout="responsive"
             width={imgWidth}
             height={imgHeight}
@@ -64,14 +77,30 @@ const Herosection2: React.FC = () => {
 
         {/* — Image block — */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <Image
-            src="/assets/landing/3D-Icon.png"
-            alt="FiPet app mockup"
-            width={400}
-            height={400}
-            className="w-64 sm:w-80 md:w-96 lg:w-[28rem] object-contain"
-            priority
-          />
+          {/* mobile icon */}
+          <div className="w-64 sm:w-80 md:hidden">
+            <Image
+              src="/assets/landing/3D-Icon.png"
+              alt="Icon mobile"
+              width={400}
+              height={400}
+              layout="responsive"
+              className="object-contain"
+              priority
+            />
+          </div>
+          {/* desktop icon */}
+          <div className="hidden w-96 lg:w-[28rem] md:block">
+            <Image
+              src="/assets/landing/3D-Icon.svg"
+              alt="Icon desktop"
+              width={400}
+              height={400}
+              layout="responsive"
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>

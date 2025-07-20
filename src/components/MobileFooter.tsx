@@ -1,9 +1,10 @@
 import React from "react";
+import Link from "next/link";
 
 const MobileFooter = () => {
   return (
-    <footer className="bg-background  px-6 py-12">
-      <div className="max-w-screen-xl mx-auto">
+    <footer className="bg-background px-6 py-12">
+      <div className="max-w-screen-xl mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="md:col-span-2 space-y-4">
             <h2 className="text-3xl font-bold text-white">
@@ -16,20 +17,20 @@ const MobileFooter = () => {
           </div>
 
           <div className="flex justify-between md:grid md:grid-cols-3 md:col-span-3 gap-8">
-            <div>
+            <div >
               <h3 className="mb-4 text-sm font-semibold text-white uppercase">
                 Company
               </h3>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 font-thin">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link href="/team" className="hover:underline">
                     Team
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -38,14 +39,17 @@ const MobileFooter = () => {
               <h3 className="mb-4 text-sm font-semibold text-white uppercase">
                 Product
               </h3>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 font-thin text-[16px]">
                 <li>
                   <a href="#" className="hover:underline">
                     Explore
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://tally.so/r/mB5ex4"
+                    className="hover:underline"
+                  >
                     Waitlist
                   </a>
                 </li>
@@ -56,19 +60,28 @@ const MobileFooter = () => {
               <h3 className="mb-4 text-sm font-semibold text-white uppercase">
                 Connect
               </h3>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 font-thin text-[16px]">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.linkedin.com/company/fipet/"
+                    className="hover:underline"
+                  >
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.instagram.com/fipetapp/"
+                    className="hover:underline"
+                  >
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.tiktok.com/@fipetapp?lang=en"
+                    className="hover:underline"
+                  >
                     TikTok
                   </a>
                 </li>
@@ -77,18 +90,19 @@ const MobileFooter = () => {
           </div>
         </div>
 
-        <div className="mt-12  pt-6 flex flex-col md:flex-row justify-between items-center text-gray-200 text-sm">
-          <span>©2025 FiPet</span>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:underline">
+       
+      </div>
+       <div className="mt-12  md:mx-10 pt-6 flex flex-row justify-between items-center text-gray-200 text-sm">
+          <span className="font-thin  ">©2025 FiPet</span>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:underline font-thin">
               Privacy Policy
             </a>
-            <a href="#" className="hover:underline">
+            <a href="#" className="hover:underline font-thin">
               Terms of Service
             </a>
           </div>
         </div>
-      </div>
     </footer>
   );
 };

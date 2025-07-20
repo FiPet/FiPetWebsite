@@ -1,7 +1,8 @@
+import "./globals.css";
 import Navbar from "@/components/navbar";
 import MobileFooter from "@/components/MobileFooter";
-import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
   children,
@@ -14,6 +15,8 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <MobileFooter />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
