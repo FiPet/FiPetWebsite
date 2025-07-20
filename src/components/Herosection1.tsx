@@ -10,8 +10,8 @@ const Herosection1: React.FC = () => {
       setScrollY(window.scrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Calculate shadow opacity based on scroll position
@@ -69,13 +69,19 @@ const Herosection1: React.FC = () => {
               <div className="flex sm:flex-row justify-center lg:justify-start gap-4 mt-6">
                 <div className="relative">
                   {/* Shadow overlay - behind the button */}
-                  <div 
+                  <div
                     className="absolute inset-0 rounded-[20px] sm:rounded-full pointer-events-none z-0"
                     style={{
-                      background: `radial-gradient(circle at center, rgba(0, 0, 0, ${shadowOpacity * 0.4}) 0%, rgba(0, 0, 0, ${shadowOpacity * 0.2}) 30%, rgba(0, 0, 0, ${shadowOpacity * 0.2}) 60%, transparent 85%)`,
+                      background: `radial-gradient(circle at center, rgba(0, 0, 0, ${
+                        shadowOpacity * 0.4
+                      }) 0%, rgba(0, 0, 0, ${
+                        shadowOpacity * 0.2
+                      }) 30%, rgba(0, 0, 0, ${
+                        shadowOpacity * 0.2
+                      }) 60%, transparent 85%)`,
                       opacity: shadowOpacity,
-                      transition: 'opacity 0.1s ease-out',
-                      filter: 'blur(12px)'
+                      transition: "opacity 0.1s ease-out",
+                      filter: "blur(12px)",
                     }}
                   />
                   <button className="relative z-10 w-[148px] h-[45px] sm:w-[189px] sm:h-auto md:w-[255px] text-white font-medium py-2 px-6 rounded-[20px] sm:rounded-full glass-button flex items-center justify-center">
@@ -84,18 +90,24 @@ const Herosection1: React.FC = () => {
                 </div>
                 <div className="relative">
                   {/* Shadow overlay - behind the button */}
-                  <div 
+                  <div
                     className="absolute inset-0 rounded-[20px] sm:rounded-full pointer-events-none z-0"
                     style={{
-                      background: `radial-gradient(circle at center, rgba(0, 0, 0, ${shadowOpacity * 0.4}) 0%, rgba(0, 0, 0, ${shadowOpacity * 0.2}) 30%, rgba(0, 0, 0, ${shadowOpacity * 0.2}) 60%, transparent 85%)`,
+                      background: `radial-gradient(circle at center, rgba(0, 0, 0, ${
+                        shadowOpacity * 0.4
+                      }) 0%, rgba(0, 0, 0, ${
+                        shadowOpacity * 0.2
+                      }) 30%, rgba(0, 0, 0, ${
+                        shadowOpacity * 0.2
+                      }) 60%, transparent 85%)`,
                       opacity: shadowOpacity,
-                      transition: 'opacity 0.1s ease-out',
-                      filter: 'blur(12px)'
+                      transition: "opacity 0.1s ease-out",
+                      filter: "blur(12px)",
                     }}
                   />
                   <button className="relative z-10 w-[148px] h-[45px] sm:w-[189px] sm:h-auto md:w-[255px] text-white font-medium py-2 px-6 rounded-[20px] sm:rounded-full glass-button flex items-center justify-center">
                     <span className="sm:hidden">Join Waitlist</span>
-  <span className="hidden sm:inline">Join the Waitlist</span>
+                    <span className="hidden sm:inline">Join the Waitlist</span>
                   </button>
                 </div>
               </div>
@@ -141,20 +153,25 @@ const Herosection1: React.FC = () => {
                 <button
                   className="block sm:hidden h-[45px] w-[168px] text-white font-medium py-2 px-6 rounded-[20px] text-center border border-white/20"
                   style={{
-                    background: "linear-gradient(90deg, #8F48FD 0%, #8FA9FD 100%)",
-                    boxShadow: "0px 3px 4px 0px #FFFFFF4D inset, 1.22px -2px 10px 0px #FFFFFF40 inset",
+                    background:
+                      "linear-gradient(90deg, #8F48FD 0%, #8FA9FD 100%)",
+                    boxShadow:
+                      "0px 3px 4px 0px #FFFFFF4D inset, 1.22px -2px 10px 0px #FFFFFF40 inset",
                   }}
                 >
                   Learn More
                 </button>
-                
+
                 {/* Desktop Button */}
                 <button
                   className="hidden sm:block h-[41px] w-[180px] text-white font-medium py-2 px-6 rounded-full text-center"
                   style={{
-                    background: "linear-gradient(180deg, rgba(143, 72, 253, 0.6) 0%, rgba(143, 72, 253, 0.9) 100%)",
-                    borderImage: "linear-gradient(359.84deg, rgba(56, 34, 91, 0.5) 4.89%, #A76DFF 95.11%) 1",
-                    boxShadow: "0px 2px 24px 0px #FFFFFF66 inset, 0px -2px 10px 0px #FFFFFF99 inset",
+                    background:
+                      "linear-gradient(180deg, rgba(143, 72, 253, 0.6) 0%, rgba(143, 72, 253, 0.9) 100%)",
+                    borderImage:
+                      "linear-gradient(359.84deg, rgba(56, 34, 91, 0.5) 4.89%, #A76DFF 95.11%) 1",
+                    boxShadow:
+                      "0px 2px 24px 0px #FFFFFF66 inset, 0px -2px 10px 0px #FFFFFF99 inset",
                   }}
                 >
                   Learn More

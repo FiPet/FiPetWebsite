@@ -8,7 +8,6 @@ const page: React.FC = () => {
     <div>
       <Herosection1 />
       <Herosection2 />
-      
     </div>
   );
 };

@@ -24,7 +24,9 @@ const socialLinksData = [
 export default function CorpSocialLinks() {
   return (
     <div className="bg-gradient-to-r from-[#C165FC] to-[#3579E9] text-white my-8 py-12 w-1/2 rounded-2xl mx-auto text-center shadow-lg">
-      <p className="text-3xl font-medium pb-3">See what we&apos;ve been up to!</p>
+      <p className="text-3xl font-medium pb-3">
+        See what we&apos;ve been up to!
+      </p>
       <div className="grid grid-cols-5 gap-0">
         <div></div>
         {socialLinksData.map(({ key, href, img, alt }) => (
