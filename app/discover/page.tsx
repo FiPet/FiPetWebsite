@@ -1,7 +1,7 @@
 import React from "react";
 import "../globals.css";
 import DiscoverSection1 from "@/components/Discoversection1";
-import DiscoverSection2 from "@/components/discoversection2";
+import DiscoverSection2 from "@/components/Discoversection2";
 import DiscoverSection3 from "./components/discover3";
 
 export default function DiscoverPage() {

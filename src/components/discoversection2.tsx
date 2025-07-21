@@ -1,6 +1,30 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
-function discoversection2() {
+const Discoversection2: React.FC = () => {
+
+const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Array of phone image paths 
+  const phoneImages = [
+   '/assets/phoneimages/phone1.png',
+    '/assets/phoneimages/phone2.png', 
+    '/assets/phoneimages/phone3.png',
+    '/assets/phoneimages/phone4.png',
+    '/assets/phoneimages/phone5.png',
+    '/assets/phoneimages/phone6.png',
+
+    // Add more phone image paths as needed
+  ];
+
+  
   return (
     <section
       className="bg-gradient-to-b from-purple-500 via-indigo-600 to-white"
@@ -32,14 +56,48 @@ function discoversection2() {
           <div className="w-full h-80 bg-gray-200 rounded-lg shadow-lg "></div>
         </div>
 
+        {/* Phone gallery with scroll animation */}
         <div className="mt-12 overflow-x-auto hide-scrollbar">
-          <div className="flex space-x-4 md:space-x-6">
-            {Array.from({ length: 20 }).map((_, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 w-24 h-40 md:w-48 md:h-64 bg-gray-200 rounded-lg shadow"
-              ></div>
-            ))}
+          <div 
+            className="flex space-x-4 md:space-x-6 transition-transform duration-75 ease-out"
+            style={{
+              transform: `translateX(-${scrollY * 0.3}px)`,
+              
+            }}
+          >
+            {Array.from({ length: 20 }).map((_, i) => {
+              const imageExists = true // Simple check based on array length
+              
+              return (
+                <div
+                  key={i}
+                  className="flex-shrink-0 w-24 h-40 md:w-48 md:h-64 rounded-lg overflow-hidden relative group hover:scale-101 transition-transform duration-300"
+                >
+                  {imageExists ? (
+                    <Image
+                      src={phoneImages[i % phoneImages.length]}
+                      alt={`Phone ${i + 1}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 96px, 192px"
+                    />
+                  ) : (
+                    // Fallback content when no image is available
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center">
+                      <div className="text-white text-center">
+                        <div className="w-8 h-12 md:w-16 md:h-24 bg-white bg-opacity-20 rounded-lg mb-2 mx-auto"></div>
+                        <p className="text-xs md:text-sm opacity-80">Phone {i + 1}</p>
+                      </div>
+                    </div>
+                  )}
+                  
+                
+                  
+                  {/* Shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -translate-x-full group-hover:translate-x-full transition-all duration-700"></div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -83,4 +141,4 @@ function discoversection2() {
   );
 }
 
-export default discoversection2;
+export default Discoversection2;
