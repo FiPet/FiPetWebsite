@@ -2,6 +2,8 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import DiscoverSec3 from "../../app/discover/components/discover3";
+// import Discover3BottomButton from "./discover3/bottom-button";
 
 export default function DiscoverSection2() {
 
@@ -42,10 +44,10 @@ export default function DiscoverSection2() {
       "
             style={{
                 backgroundImage: "url('/assets/landing/hero2_background.png')",
-                minHeight: "100vh",
+                // minHeight: "100vh",
             }}
         >
-            <div className="max-w-screen-xl mx-auto px-6 py-12 md:py-24">
+            <div className="max-w-screen-xl mx-auto px-6 py-12 md:py-30">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div className="text-white space-y-6 md:pr-12">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
@@ -83,7 +85,7 @@ export default function DiscoverSection2() {
                     ref={carouselRef}
                     className="mt-12 overflow-x-auto hide-scrollbar"
                 >
-                    <div className="flex space-x-4 md:space-x-6">
+                    <div className="flex space-x-4 md:space-x-6p py-4">
                         {[
                             "/assets/discover/screen_1.png",
                             "/assets/discover/screen_2.png",
@@ -105,7 +107,7 @@ export default function DiscoverSection2() {
                     </div>
                 </div>
 
-                <div className="mt-16">
+                <div className="mt-16 py-12">
                     <h3 className="text-2xl sm:text-3xl font-bold text-[#F97216]">
                         How It Works
                     </h3>
@@ -144,6 +146,10 @@ export default function DiscoverSection2() {
                     </div>
                 </div>
             </div>
+
+            <DiscoverSec3 />
+
+
         </section>
     );
 }

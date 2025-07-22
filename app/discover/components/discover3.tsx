@@ -6,7 +6,7 @@ import Discover3BottomButton from "./discover3/bottom-button";
 
 export default function DiscoverSec3() {
   return (
-    <div className="bg-[#FFF8EC] pt-16">
+    <div className=" pt-16">
       {/* title */}
       <div className="text-center">
         <h1 className="text-6xl font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent inline-block">
@@ -89,10 +89,10 @@ export default function DiscoverSec3() {
       <div className="mt-20 bg-gradient-to-r from-[#F97216] to-[#F99B16] px-4 py-6 text-white">
         <div className="mx-auto flex max-w-6xl justify-center items-center gap-4 flex-col md:flex-row">
           <p className="px-6 py-2 text-white text-2xl">Get involved!</p>
-          <Discover3BottomButton text="Join the waitlist" onClick={() => {}} />
+          <Discover3BottomButton text="Join the waitlist" onClick={() => { }} />
           <Discover3BottomButton
             text="Apply as a creator intern"
-            onClick={() => {}}
+            onClick={() => { }}
           />
           <p className="px-6 py-2 text-end">
             Partnerships, press, or investing
