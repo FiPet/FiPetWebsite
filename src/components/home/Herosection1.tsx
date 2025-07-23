@@ -74,14 +74,14 @@ const Herosection1: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-1 px-3 lg:pt-5">
             {/* Text Content */}
             <div className="text-[#FFF8EC]   z-10 w-auto">
-              
               <h1 className="text-[54px] sm:text-[60px] lg:text-[100px] font-poppins font-semibold sm:font-semibold leading-tight text-shadow-purple">
                 <span className="text-[#F97216] ">Finance.</span>
                 <br />
                 <RotatingText />
               </h1>
               <p className="hidden sm:block text-lg md:text-[32px] mt-4  mx-auto font-[500] ">
-                The fun, effective way teens learn<br/> about finance.
+                The fun, effective way teens learn
+                <br /> about finance.
               </p>
 
               {/* Mobile Phone Image */}
@@ -144,14 +144,14 @@ const Herosection1: React.FC = () => {
                 </div>
               </div>
 
-             <div className="flex justify-center mt-6 sm:hidden">
-                <button 
+              <div className="flex justify-center mt-6 sm:hidden">
+                <button
                   onClick={scrollToNextSection}
                   className="relative w-15 h-10 hover:opacity-80 hover:scale-110 transition-all duration-200 cursor-pointer group"
                   aria-label="Scroll to next section"
                 >
                   <Image
-                    src="/arrow.svg"
+                    src="./assets/arrow.svg"
                     alt="Arrow down"
                     fill
                     className="object-contain group-hover:translate-y-1 transition-transform duration-200"
@@ -164,13 +164,15 @@ const Herosection1: React.FC = () => {
         </section>
 
         {/* Section 2: Light Background */}
-        <section id="section-2" className="w-full bg-[#FFF8ECBF] md:px-20 py-16 sm:pt-32">
+        <section
+          id="section-2"
+          className="w-full bg-[#FFF8ECBF] md:px-20 py-16 sm:pt-32"
+        >
           <div className="flex flex-col lg:flex-row items-center justify-between mx-auto gap-12">
             {/* Text Content */}
             <div className="w-full lg:w-1/2 text-left z-10">
               <h2 className="font-poppins font-medium text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#2F2F2F]">
-                We&apos;re changing the  <br /> way teens
-               learn about finance
+                We&apos;re changing the <br /> way teens learn about finance
               </h2>
 
               <p className="mt-6 text-[#2F2F2F] font-poppins font-normal text-[16px] sm:text-[18px] lg:text-[20px] leading-[142%]">

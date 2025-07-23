@@ -1,7 +1,7 @@
 import "./globals.css";
 import React from "react";
-import Herosection1 from "@/components/Herosection1";
-import Herosection2 from "@/components/Herosection2";
+import Herosection1 from "@/components/home/Herosection1";
+import Herosection2 from "@/components/home/Herosection2";
 
 const page: React.FC = () => {
   return (

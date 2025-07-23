@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const MobileFooter = () => {
+const Footer = () => {
   return (
     <footer className="bg-background px-6 py-12">
       <div className="max-w-screen-xl mx-auto">
@@ -113,4 +113,4 @@ const MobileFooter = () => {
   );
 };
 
-export default MobileFooter;
+export default Footer

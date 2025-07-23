@@ -10,7 +10,7 @@ const socialLinksData = [
   {
     key: "instagram",
     href: "https://www.instagram.com/fipetapp/",
-    img: "/assets/ig/02_White_Glyph/Instagram_Glyph_White.svg",
+    img: "/assets/instagram/02_White_Glyph/Instagram_Glyph_White.svg",
     alt: "Instagram icon",
   },
   {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TeamMember } from "../config/interfaces";
+import { TeamMember } from "./config/interfaces";
 
 export default function TeamMembersPanel({
   image,
@@ -20,7 +20,11 @@ export default function TeamMembersPanel({
       </div>
       <h6 className="text-lg font-semibold text-[#F97216] my-2">{teamName}</h6>
       {teamMembers.map((member, idx) => {
-        return <p key={idx} className="font-normal">{member}</p>;
+        return (
+          <p key={idx} className="font-normal">
+            {member}
+          </p>
+        );
       })}
     </div>
   );

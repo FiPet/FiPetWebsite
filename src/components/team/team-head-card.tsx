@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { TeamHead } from "../config/interfaces";
-import styles from "../page.module.css";
+import { TeamHead } from "./config/interfaces";
+import styles from "../../../app/team/page.module.css";
 
 const SocialIconLink = ({
   href,
@@ -70,7 +70,7 @@ export default function TeamHeadCard({
         {socialLink && (
           <SocialIconLink
             href={socialLink}
-            src="/assets/ig/02_White_Glyph/Instagram_Glyph_White.svg"
+            src="/assets/instagram/02_White_Glyph/Instagram_Glyph_White.svg"
             alt="Instagram"
           />
         )}

@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import IntroCard from "./discover3/intro-card";
-import LearnMoreButton from "./discover3/learn-more-button";
-import DiscoverActionButton from "./discover3/action-button";
+import IntroCard from "./intro-card";
+import LearnMoreButton from "./learn-more-button";
+import DiscoverActionButton from "./action-button";
 
 export default function DiscoverSection3() {
   return (

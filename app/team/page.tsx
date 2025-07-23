@@ -1,9 +1,9 @@
-import TeamHeadCard from "./components/team-head-card";
-import TeamMembersPanel from "./components/team-members-panel";
-import { teamHeads, teams } from "./config/constants";
+import TeamHeadCard from "@/components/team/team-head-card";
+import TeamMembersPanel from "@/components/team/team-members-panel";
+import { teamHeads, teams } from "@/components/team/config/constants";
 import styles from "./page.module.css";
 import "../globals.css";
-import CorpSocialLinks from "./components/corp-social-links";
+import CorpSocialLinks from "../../src/components/team/corp-social-links";
 
 export default function TeamPage() {
   return (
