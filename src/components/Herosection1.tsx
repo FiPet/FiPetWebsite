@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const Herosection1: React.FC = () => {
-  const [scrollY, setScrollY] = useState(0);
+   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +16,37 @@ const Herosection1: React.FC = () => {
 
   // Calculate shadow opacity based on scroll position
   const shadowOpacity = Math.max(0, 1 - scrollY / 200);
+
+  // Animated scroll to next section function
+  const scrollToNextSection = () => {
+    const nextSection = document.querySelector('#section-2')as HTMLElement;
+    if (nextSection) {
+      const targetPosition = nextSection.offsetTop;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 800; // 800ms duration
+      let startTime: number | null = null;
+
+      const animation = (currentTime: number) => {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        // Easing function (ease-in-out cubic)
+        const easeInOutCubic = progress < 0.5 
+          ? 4 * progress * progress * progress 
+          : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+        
+        window.scrollTo(0, startPosition + distance * easeInOutCubic);
+        
+        if (progress < 1) {
+          requestAnimationFrame(animation);
+        }
+      };
+      
+      requestAnimationFrame(animation);
+    }
+  };
 
   const RotatingText = () => {
     const texts = ["Gamified.", "For Teens.", "Made Easy."];
@@ -36,30 +67,31 @@ const Herosection1: React.FC = () => {
   };
 
   return (
-    <div className="w-full bg-[#FFF8EC] px-4 sm:px-10 lg:px-20 py-24 sm:py-24">
+    <div className="w-full bg-[#FFF8EC] px-4 sm:px-10 lg:px-20 py-20 sm:py-24">
       <div className="relative">
         {/* Section 1: Purple Gradient */}
-        <section className="relative min-h-screen sm:min-h-[622px] px-6 sm:px-8 lg:px-20 py-12 sm:py-10 bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] rounded-[20px] sm:rounded-[30px] shadow-inner">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-0 lg:pt-5">
+        <section className="relative min-h-[704px] sm:min-h-[622px] px-6 sm:px-8 lg:px-20 py-10 sm:py-10 bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] rounded-[30px] shadow-inner">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-1 px-3 lg:pt-5">
             {/* Text Content */}
-            <div className="text-white text-center lg:text-left z-10 w-full lg:w-auto">
-              <h1 className="text-[54px] sm:text-[60px] lg:text-[100px] font-poppins font-bold sm:font-semibold leading-tight text-shadow-purple">
-                <span className="text-[#FF8F33]">Finance.</span>
+            <div className="text-[#FFF8EC]   z-10 w-auto">
+              
+              <h1 className="text-[54px] sm:text-[60px] lg:text-[100px] font-poppins font-semibold sm:font-semibold leading-tight text-shadow-purple">
+                <span className="text-[#F97216] ">Finance.</span>
                 <br />
                 <RotatingText />
               </h1>
-              <p className="hidden sm:block text-lg md:text-2xl mt-4 max-w-md mx-auto lg:mx-0">
-                The fun, effective way teens learn about finance.
+              <p className="hidden sm:block text-lg md:text-[32px] mt-4  mx-auto font-[500] ">
+                The fun, effective way teens learn<br/> about finance.
               </p>
 
               {/* Mobile Phone Image */}
-              <div className="flex justify-center mt-8 mb-8 sm:hidden">
-                <div className="relative w-[250px] h-[400px]">
+              <div className="flex justify-center mt-0 mb-0 sm:hidden">
+                <div className="relative w-[250px] h-[400px] ">
                   <Image
                     src="/phone.png"
                     alt="FiPet Phone App"
                     fill
-                    className="object-contain drop-shadow-2xl"
+                    className="object-contain drop-shadow-2xl -rotate-10"
                     priority
                   />
                 </div>
@@ -72,7 +104,7 @@ const Herosection1: React.FC = () => {
                   <div
                     className="absolute inset-0 rounded-[20px] sm:rounded-full pointer-events-none z-0"
                     style={{
-                      background: `radial-gradient(circle at center, rgba(0, 0, 0, ${
+                      background: `radial-gradient(circle at   center, rgba(0, 0, 0, ${
                         shadowOpacity * 0.4
                       }) 0%, rgba(0, 0, 0, ${
                         shadowOpacity * 0.2
@@ -112,29 +144,33 @@ const Herosection1: React.FC = () => {
                 </div>
               </div>
 
-              {/* Mobile Arrow */}
-              <div className="flex justify-center mt-6 sm:hidden">
-                <div className="relative w-15 h-10">
+             <div className="flex justify-center mt-6 sm:hidden">
+                <button 
+                  onClick={scrollToNextSection}
+                  className="relative w-15 h-10 hover:opacity-80 hover:scale-110 transition-all duration-200 cursor-pointer group"
+                  aria-label="Scroll to next section"
+                >
                   <Image
                     src="/arrow.svg"
                     alt="Arrow down"
                     fill
-                    className="object-contain"
+                    className="object-contain group-hover:translate-y-1 transition-transform duration-200"
                   />
-                </div>
+                  <div className="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 blur-sm"></div>
+                </button>
               </div>
             </div>
           </div>
         </section>
 
         {/* Section 2: Light Background */}
-        <section className="w-full bg-[#FFF8ECBF] px-6 sm:px-6 md:px-20 py-16 sm:pt-32">
+        <section id="section-2" className="w-full bg-[#FFF8ECBF] md:px-20 py-16 sm:pt-32">
           <div className="flex flex-col lg:flex-row items-center justify-between mx-auto gap-12">
             {/* Text Content */}
             <div className="w-full lg:w-1/2 text-left z-10">
               <h2 className="font-poppins font-medium text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#2F2F2F]">
-                We&apos;re changing the way teens
-                <br /> learn about finance
+                We&apos;re changing the  <br /> way teens
+               learn about finance
               </h2>
 
               <p className="mt-6 text-[#2F2F2F] font-poppins font-normal text-[16px] sm:text-[18px] lg:text-[20px] leading-[142%]">

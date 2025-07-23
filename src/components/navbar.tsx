@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           <Link href="/">Home</Link>
           <Link href="/discover">Discover</Link>
           <Link href="/team">Team</Link>
-          {/* <Link href="/contact">Contact Us</Link> */}
+          <Link href="/contact">Contact Us</Link>
         </div>
 
         {/* Right side: Join Button (always visible) */}

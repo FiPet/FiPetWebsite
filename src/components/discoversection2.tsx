@@ -1,54 +1,41 @@
-// src/components/DiscoverSection2.tsx
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import DiscoverSection3 from "../../app/discover/components/discover3";
 
-export default function DiscoverSection2() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const carouselRef = useRef<HTMLDivElement>(null);
+const Discoversection2: React.FC = () => {
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    function onScroll() {
-      if (!sectionRef.current || !carouselRef.current) return;
-
-      const section = sectionRef.current;
-      const carousel = carouselRef.current;
-
-      const scrollY = window.scrollY;
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-
-      const progress = Math.min(
-        Math.max((scrollY - sectionTop) / sectionHeight, 0),
-        1
-      );
-
-      const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
-
-      carousel.scrollTo({
-        left: progress * maxScrollLeft,
-        behavior: "auto",
-      });
-    }
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Array of phone image paths
+  const phoneImages = [
+    "/assets/phoneimages/phone1.png",
+    "/assets/phoneimages/phone2.png",
+    "/assets/phoneimages/phone3.png",
+    "/assets/phoneimages/phone4.png",
+    "/assets/phoneimages/phone5.png",
+    "/assets/phoneimages/phone6.png",
+
+    // Add more phone image paths as needed
+  ];
+
   return (
     <section
-      ref={sectionRef}
-      className="
-        relative
-        bg-gradient-to-b from-purple-500 via-indigo-600 to-white
-        bg-cover bg-center
-      "
+      className="bg-gradient-to-b from-purple-500 via-indigo-600 to-white"
       style={{
         backgroundImage: "url('/assets/landing/hero2_background.png')",
-        // minHeight: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+        padding: "2rem",
       }}
     >
-      <div className="max-w-screen-xl mx-auto px-6 py-12 md:py-30">
+      <div className="max-w-screen-xl mx-auto px-6 py-12 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-white space-y-6 md:pr-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
@@ -64,61 +51,61 @@ export default function DiscoverSection2() {
               Duolingo, Pokémon, and Gen Z media habits.
             </p>
           </div>
+          <div className="w-full h-80 bg-gray-200 rounded-lg shadow-lg "></div>
+        </div>
 
-          <div className="flex justify-center">
-            <Image
-              src="/assets/discover/stock-image 1.png"
-              alt="FiPet Character"
-              width={472}
-              height={350}
-              className="
-                w-[200px] h-[200px]
-                sm:w-[400px] sm:h-[250px]
-                lg:w-[472px] lg:h-[350px]
-                object-contain
-              "
-              priority
-            />
+        {/* Phone gallery with scroll animation */}
+        <div className="mt-12 overflow-x-auto hide-scrollbar">
+          <div
+            className="flex space-x-4 md:space-x-6 transition-transform duration-75 ease-out"
+            style={{
+              transform: `translateX(-${scrollY * 0.3}px)`,
+            }}
+          >
+            {Array.from({ length: 20 }).map((_, i) => {
+              const imageExists = true; // Simple check based on array length
+
+              return (
+                <div
+                  key={i}
+                  className="flex-shrink-0 w-24 h-40 md:w-48 md:h-64 rounded-lg overflow-hidden relative group hover:scale-101 transition-transform duration-300"
+                >
+                  {imageExists ? (
+                    <Image
+                      src={phoneImages[i % phoneImages.length]}
+                      alt={`Phone ${i + 1}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 96px, 192px"
+                    />
+                  ) : (
+                    // Fallback content when no image is available
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center">
+                      <div className="text-white text-center">
+                        <div className="w-8 h-12 md:w-16 md:h-24 bg-white bg-opacity-20 rounded-lg mb-2 mx-auto"></div>
+                        <p className="text-xs md:text-sm opacity-80">
+                          Phone {i + 1}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -translate-x-full group-hover:translate-x-full transition-all duration-700"></div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
-        <div ref={carouselRef} className="mt-12 overflow-x-auto hide-scrollbar">
-          <div className="flex space-x-4 md:space-x-6p py-4">
-            {[
-              "/assets/discover/screen_1.png",
-              "/assets/discover/screen_2.png",
-              "/assets/discover/screen_3.png",
-              "/assets/discover/screen_4.png",
-              "/assets/discover/screen_5.png",
-              "/assets/discover/screen_6.png",
-              "/assets/discover/screen_7.png",
-            ].map((src, i) => (
-              <Image
-                key={i}
-                src={src}
-                alt={`Carousel frame ${i}`}
-                width={400}
-                height={250}
-                className="flex-shrink-0 w-48 h-64 md:w-72 md:h-96 object-cover rounded-lg "
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-16 py-12">
-          <h3 className="text-2xl sm:text-3xl font-bold text-[#F97216]">
+        <div className="mt-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
             How It Works
           </h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4 ">
-              <Image
-                alt=""
-                src="/assets/discover/XP.png"
-                width={40}
-                height={40}
-                className="w-12 h-12 rounded-full flex-shrink-0"
-              />
-              <p className="text-gray-700 text-xl">
+            <div className="flex items-start space-x-4">
+              <div className="w-12 h-12 bg-gray-300 rounded-full flex-shrink-0" />
+              <p className="text-gray-700">
                 <strong>Teens complete quests</strong> to earn XP and unlock pet
                 upgrades
               </p>
@@ -170,4 +157,6 @@ export default function DiscoverSection2() {
       </div>
     </section>
   );
-}
+};
+
+export default Discoversection2;

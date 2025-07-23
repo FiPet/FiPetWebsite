@@ -21,7 +21,7 @@ const MobileFooter = () => {
               <h3 className="mb-4 text-sm font-semibold text-white uppercase">
                 Company
               </h3>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 font-thin">
                 <li>
                   <Link href="/" className="hover:underline">
                     About Us
@@ -39,7 +39,7 @@ const MobileFooter = () => {
               <h3 className="mb-4 text-sm font-semibold text-white uppercase">
                 Product
               </h3>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 font-thin text-[16px]">
                 <li>
                   <a href="#" className="hover:underline">
                     Explore
@@ -60,7 +60,7 @@ const MobileFooter = () => {
               <h3 className="mb-4 text-sm font-semibold text-white uppercase">
                 Connect
               </h3>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 font-thin text-[16px]">
                 <li>
                   <a
                     href="https://www.linkedin.com/company/fipet/"
@@ -90,17 +90,24 @@ const MobileFooter = () => {
           </div>
         </div>
 
+        {/* SEE WHICH SECTION LOOKS BETTER */}
         <div className="mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-200 text-sm">
           <span>©2025 FiPet</span>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:underline">
+              {/* </div>
+       <div className="mt-12  md:mx-10 pt-6 flex flex-row justify-between items-center text-gray-200 text-sm">
+          <span className="font-thin  ">©2025 FiPet</span>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:underline font-thin"> */}
               Privacy Policy
             </a>
-            <a href="#" className="hover:underline">
+            <a href="#" className="hover:underline font-thin">
               Terms of Service
             </a>
           </div>
         </div>
+        {/* SEE IF THIS CLOSING DIV IS IN THE CORRECT SPOT */}
       </div>
     </footer>
   );
