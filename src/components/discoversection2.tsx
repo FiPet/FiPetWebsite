@@ -2,7 +2,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import DiscoverSection3 from "../../app/discover/components/discover3";
 
 export default function DiscoverSection2() {
   const sectionRef = useRef<HTMLElement>(null);
