@@ -4,9 +4,9 @@ import IntroCard from "./discover3/intro-card";
 import LearnMoreButton from "./discover3/learn-more-button";
 import DiscoverActionButton from "./discover3/action-button";
 
-export default function DiscoverSec3() {
+export default function DiscoverSection3() {
   return (
-    <div className="bg-[#FFF8EC] pt-16">
+    <div className=" pt-16">
       {/* title */}
       <div className="text-center">
         <h1 className="text-6xl font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent inline-block">

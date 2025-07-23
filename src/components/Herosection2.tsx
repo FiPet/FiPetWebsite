@@ -21,11 +21,11 @@ const Herosection2: React.FC = () => {
       <div className="container mx-auto px-6 pt-16 pb-12 text-center md:pb-16">
         <h1
           className="text-white font-extrabold leading-tight 
-                       text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+                       text-5xl md:text-9xl sm:text-9xl lg:text-9xl"
         >
           Learn. Battle. Evolve.
         </h1>
-        <p className="mt-4 text-white text-lg sm:text-xl md:text-2xl">
+        <p className="mt-4 text-white text-3xl md:text-5xl">
           All the finance. None of the stress.
         </p>
       </div>
