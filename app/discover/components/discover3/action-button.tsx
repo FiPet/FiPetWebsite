@@ -1,6 +1,6 @@
 "use client";
 
-type Discover3BottomButtonProps = {
+type DiscoverActionProps = {
   text: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
@@ -8,7 +8,7 @@ type Discover3BottomButtonProps = {
 export default function DiscoverActionButton({
   text,
   onClick,
-}: Discover3BottomButtonProps) {
+}: DiscoverActionProps) {
   return (
     <button
       onClick={onClick}
