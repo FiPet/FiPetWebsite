@@ -11,6 +11,28 @@ const Discoversection2: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const [bgImgPath, setBgImgPath] = useState(
+    "/assets/landing/hero2_background.png"
+  );
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const checkScreenSize = () => {
+      if (window.innerWidth >= 640) {
+        // Tailwind sm: min-width 640px
+        setBgImgPath("/assets/landing/hero2_background.png");
+      } else {
+        // max-width 639px
+        setBgImgPath("/assets/landing/hero2_background_mobile.png");
+      }
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   // Array of phone image paths
   const phoneImages = [
     "/assets/phoneimages/phone1.png",
@@ -25,9 +47,9 @@ const Discoversection2: React.FC = () => {
 
   return (
     <section
-      className="bg-gradient-to-b from-purple-500 via-indigo-600 to-white"
+      className=""
       style={{
-        backgroundImage: "url('/assets/landing/hero2_background.png')",
+        backgroundImage: `url('${bgImgPath}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
