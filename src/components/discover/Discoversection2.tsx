@@ -133,7 +133,7 @@ const Discoversection2: React.FC = () => {
                 height={40}
                 className="w-12 h-12 rounded-full flex-shrink-0"
               />
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-xl">
                 <strong>Teens complete quests</strong> to earn XP and unlock pet
                 upgrades
               </p>
