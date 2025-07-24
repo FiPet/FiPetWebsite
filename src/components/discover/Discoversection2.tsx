@@ -126,7 +126,13 @@ const Discoversection2: React.FC = () => {
           </h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-gray-300 rounded-full flex-shrink-0" />
+              <Image
+                alt="experience"
+                src="/assets/discover/xp.svg"
+                width={40}
+                height={40}
+                className="w-12 h-12 rounded-full flex-shrink-0"
+              />
               <p className="text-gray-700">
                 <strong>Teens complete quests</strong> to earn XP and unlock pet
                 upgrades
