@@ -88,7 +88,13 @@ const Herosection2: React.FC = () => {
                 `,
               }}
             >
-              <Link href="/">Join the Waitlist</Link>
+              <Link
+                href="https://tally.so/r/mB5ex4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join the Waitlist
+              </Link>
             </div>
           </div>
 

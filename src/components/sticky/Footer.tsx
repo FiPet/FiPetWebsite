@@ -48,6 +48,8 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://tally.so/r/mB5ex4"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:underline"
                   >
                     Waitlist
@@ -113,4 +115,4 @@ const Footer = () => {
   );
 };
 
-export default Footer
+export default Footer;

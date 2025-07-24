@@ -91,7 +91,16 @@ export default function DiscoverSection3() {
           <p className="px-6 py-2 text-white text-3xl font-light whitespace-nowrap">
             Get involved!
           </p>
-          <DiscoverActionButton text="Join the waitlist" onClick={() => {}} />
+          <DiscoverActionButton
+            text="Join the waitlist"
+            onClick={() => {
+              window.open(
+                "https://tally.so/r/mB5ex4",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
+          />
           <DiscoverActionButton
             text="Apply as a creator intern"
             onClick={() => {}}
