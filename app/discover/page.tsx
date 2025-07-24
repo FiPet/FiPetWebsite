@@ -6,7 +6,7 @@ import DiscoverSection3 from "@/components/discover/Discoversection3";
 
 export default function DiscoverPage() {
   return (
-    <div className=" w-full bg-[#FFF8EC]  ">
+    <div className="w-full bg-white sm:bg-[#FFF8EC]">
       <DiscoverSection1 />
       <DiscoverSection2 />
       <DiscoverSection3 />
