@@ -34,7 +34,7 @@ export default function DiscoverSection3() {
 
       {/* features */}
       <div className="mx-auto mt-16 flex max-w-6xl flex-row items-center gap-12">
-        <ul className="space-y-4 text-lg font-medium text-[#8F48FD] ml-[9%] w-1/2">
+        <ul className="space-y-6 text-base sm:text-2xl font-medium text-[#8F48FD] ml-[9%] w-[40%]">
           <li>300+ unique quests by launch</li>
           <li>
             100+ creator partners posting daily content and driving growth
@@ -45,12 +45,12 @@ export default function DiscoverSection3() {
           </li>
         </ul>
 
-        <div className="relative h-56 w-56 md:h-64 md:w-64">
+        <div className="relative h-56 w-56 md:h-96 md:w-96">
           <Image
             src="/assets/exciting_fox.svg"
             alt="Happy fox"
             fill
-            sizes="(max-width: 768px) 224px, 256px"
+            sizes="(max-width: 768px) 224px, 384px"
             className="object-contain"
             priority
           />
