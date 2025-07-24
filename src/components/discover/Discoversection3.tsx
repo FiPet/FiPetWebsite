@@ -9,7 +9,7 @@ export default function DiscoverSection3() {
     <div className=" pt-16">
       {/* title */}
       <div className="text-center">
-        <h1 className="text-6xl font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent inline-block">
+        <h1 className="text-6xl sm:text-8xl font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent inline-block">
           Whats coming
           <br />
           next?
