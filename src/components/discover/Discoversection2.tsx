@@ -121,7 +121,7 @@ const Discoversection2: React.FC = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+          <h3 className="text-2xl sm:text-3xl font-medium text-[#F97216]">
             How It Works
           </h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
