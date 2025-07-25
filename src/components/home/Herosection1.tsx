@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const Herosection1: React.FC = () => {
-   const [scrollY, setScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +19,7 @@ const Herosection1: React.FC = () => {
 
   // Animated scroll to next section function
   const scrollToNextSection = () => {
-    const nextSection = document.querySelector('#section-2')as HTMLElement;
+    const nextSection = document.querySelector("#section-2") as HTMLElement;
     if (nextSection) {
       const targetPosition = nextSection.offsetTop;
       const startPosition = window.pageYOffset;
@@ -31,19 +31,20 @@ const Herosection1: React.FC = () => {
         if (startTime === null) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
         const progress = Math.min(timeElapsed / duration, 1);
-        
+
         // Easing function (ease-in-out cubic)
-        const easeInOutCubic = progress < 0.5 
-          ? 4 * progress * progress * progress 
-          : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-        
+        const easeInOutCubic =
+          progress < 0.5
+            ? 4 * progress * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
         window.scrollTo(0, startPosition + distance * easeInOutCubic);
-        
+
         if (progress < 1) {
           requestAnimationFrame(animation);
         }
       };
-      
+
       requestAnimationFrame(animation);
     }
   };
@@ -57,7 +58,7 @@ const Herosection1: React.FC = () => {
         setIndex((prev) => (prev + 1) % texts.length);
       }, 2000);
       return () => clearInterval(interval);
-    }, []);
+    }, [texts.length]);
 
     return (
       <span className="text-[#FFF8EC] inline-block whitespace-nowrap transition-opacity duration-500 ease-in-out">
