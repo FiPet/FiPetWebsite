@@ -8,21 +8,25 @@ const howItWorks = [
     src: "/assets/discover/xp.svg",
     alt: "experience",
     text: "Teens complete quests to earn XP and unlock pet upgrades",
+    numOfBold: 3,
   },
   {
     src: "/assets/discover/arrow.png",
     alt: "arrow",
     text: "Features include streak rewards, leaderboards, badges, and 1v1 quiz battles",
+    numOfBold: 4,
   },
   {
     src: "/assets/discover/dollar sign.png",
     alt: "dollar sign",
     text: "Each quest teaches financial concepts through storytelling and multiple-choice interactions",
+    numOfBold: 5,
   },
   {
     src: "/assets/discover/Group 92.png",
     alt: "group icon",
     text: "Designed to engage both beginners and financially savvy teens",
+    numOfBold: 5,
   },
 ];
 
@@ -162,6 +166,7 @@ const Discoversection2: React.FC = () => {
                 src={item.src}
                 alt={item.alt}
                 text={item.text}
+                numOfBold={item.numOfBold}
               />
             ))}
           </div>
