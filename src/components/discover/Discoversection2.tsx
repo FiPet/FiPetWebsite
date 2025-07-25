@@ -125,7 +125,7 @@ const Discoversection2: React.FC = () => {
             How It Works
           </h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
               <Image
                 alt="experience"
                 src="/assets/discover/xp.svg"
@@ -138,7 +138,7 @@ const Discoversection2: React.FC = () => {
                 upgrades
               </p>
             </div>
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
               <Image
                 alt=""
                 src="/assets/discover/arrow.png"
@@ -152,7 +152,7 @@ const Discoversection2: React.FC = () => {
                 badges, and 1v1 quiz battles
               </p>
             </div>
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
               <Image
                 alt=""
                 src="/assets/discover/dollar sign.png"
@@ -166,7 +166,7 @@ const Discoversection2: React.FC = () => {
                 storytelling and multiple-choice interactions
               </p>
             </div>
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
               <Image
                 alt=""
                 src="/assets/discover/Group 92.png"
