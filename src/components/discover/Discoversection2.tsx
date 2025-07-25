@@ -82,22 +82,29 @@ const Discoversection2: React.FC = () => {
       }}
     >
       <div className="max-w-screen-xl mx-auto px-6 py-12 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="text-white space-y-6 md:pr-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+        <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-8 items-center mx-auto w-[90%]">
+          <div className="text-white space-y-6 md:px-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-medium pb-6">
               Fipet is a mobile app where teens learn personal finance through
               five-minute interactive quests
             </h2>
-            <p className="text-lg sm:text-xl">
+            <p className="text-lg sm:text-2xl">
               Users raise, evolve, and compete with a digital pet by completing
               challenges.
             </p>
-            <p className="text-lg sm:text-xl">
+            <p className="text-lg sm:text-2xl">
               Designed to feel like a game, not a textbook— inspired by
               Duolingo, Pokémon, and Gen Z media habits.
             </p>
           </div>
-          <div className="w-full h-80 bg-gray-200 rounded-lg shadow-lg "></div>
+          <div className="hidden sm:block">
+            <Image
+              src="/assets/discover/lady.png"
+              alt="playing with phone"
+              width={340}
+              height={400}
+            />
+          </div>
         </div>
 
         {/* Phone gallery with scroll animation */}
