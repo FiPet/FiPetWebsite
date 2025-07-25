@@ -1,6 +1,30 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import HowItWorksCard from "./how-it-works-card";
+
+const howItWorks = [
+  {
+    src: "/assets/discover/xp.svg",
+    alt: "experience",
+    text: "Teens complete quests to earn XP and unlock pet upgrades",
+  },
+  {
+    src: "/assets/discover/arrow.png",
+    alt: "arrow",
+    text: "Features include streak rewards, leaderboards, badges, and 1v1 quiz battles",
+  },
+  {
+    src: "/assets/discover/dollar sign.png",
+    alt: "dollar sign",
+    text: "Each quest teaches financial concepts through storytelling and multiple-choice interactions",
+  },
+  {
+    src: "/assets/discover/Group 92.png",
+    alt: "group icon",
+    text: "Designed to engage both beginners and financially savvy teens",
+  },
+];
 
 const Discoversection2: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -120,66 +144,19 @@ const Discoversection2: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-16 mx-auto w-[80%]">
           <h3 className="text-2xl sm:text-3xl font-medium text-[#F97216]">
             How It Works
           </h3>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
-              <Image
-                alt="experience"
-                src="/assets/discover/xp.svg"
-                width={40}
-                height={40}
-                className="w-12 h-12 rounded-full flex-shrink-0"
+            {howItWorks.map((item, idx) => (
+              <HowItWorksCard
+                key={idx}
+                src={item.src}
+                alt={item.alt}
+                text={item.text}
               />
-              <p className="text-gray-700 text-xl">
-                <strong>Teens complete quests</strong> to earn XP and unlock pet
-                upgrades
-              </p>
-            </div>
-            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
-              <Image
-                alt=""
-                src="/assets/discover/arrow.png"
-                width={40}
-                height={40}
-                className="w-12 h-12 rounded-full flex-shrink-0"
-              />
-
-              <p className="text-gray-700 text-xl">
-                <strong>Features include streak rewards,</strong> leaderboards,
-                badges, and 1v1 quiz battles
-              </p>
-            </div>
-            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
-              <Image
-                alt=""
-                src="/assets/discover/dollar sign.png"
-                width={40}
-                height={40}
-                className="w-12 h-12 rounded-full flex-shrink-0"
-              />
-
-              <p className="text-gray-700 text-xl">
-                <strong>Each quest teaches financial concepts</strong> through
-                storytelling and multiple-choice interactions
-              </p>
-            </div>
-            <div className="flex items-start space-x-4 flex-row-reverse sm:flex-row">
-              <Image
-                alt=""
-                src="/assets/discover/Group 92.png"
-                width={40}
-                height={40}
-                className="w-12 h-12 rounded-full flex-shrink-0"
-              />
-
-              <p className="text-gray-700 text-xl">
-                <strong>Designed to engage both beginners</strong> and
-                financially savvy teens
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
