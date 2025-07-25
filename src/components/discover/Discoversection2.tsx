@@ -11,19 +11,19 @@ const howItWorks = [
     numOfBold: 3,
   },
   {
-    src: "/assets/discover/arrow.png",
+    src: "/assets/discover/orange_arrow.svg",
     alt: "arrow",
     text: "Features include streak rewards, leaderboards, badges, and 1v1 quiz battles",
     numOfBold: 4,
   },
   {
-    src: "/assets/discover/dollar sign.png",
+    src: "/assets/discover/dollar_sign.svg",
     alt: "dollar sign",
     text: "Each quest teaches financial concepts through storytelling and multiple-choice interactions",
     numOfBold: 5,
   },
   {
-    src: "/assets/discover/Group 92.png",
+    src: "/assets/discover/group_people.svg",
     alt: "group icon",
     text: "Designed to engage both beginners and financially savvy teens",
     numOfBold: 5,
