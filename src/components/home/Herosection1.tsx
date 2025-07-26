@@ -71,21 +71,21 @@ const Herosection1: React.FC = () => {
     <div className="w-full bg-[#FFF8EC] px-4 sm:px-10 lg:px-20 py-20 sm:py-24">
       <div className="relative">
         {/* Section 1: Purple Gradient */}
-        <section className="relative min-h-[704px] sm:min-h-[622px] px-6 sm:px-8 lg:px-20 py-10 sm:py-10 bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] rounded-[30px] shadow-inner">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-1 px-3 lg:pt-5">
+        <section className="relative  px-4 sm:px-6 md:px-8 lg:px-12 py-10 bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] rounded-[30px] shadow-inner">
+          <div className="flex flex-col lg:flex-row items-center sm:items-start justify-between gap-10 py-1 lg:py-5">
             {/* Text Content */}
-            <div className="text-[#FFF8EC]   z-10 w-auto">
-              <h1 className="text-[54px] sm:text-[60px] lg:text-[100px] font-poppins font-semibold sm:font-semibold leading-tight text-shadow-purple">
+            <div className="text-[#FFF8EC] z-10 w-auto">
+              <h1 className="text-[54px] sm:text-[60px] lg:text-[100px] font-poppins font-semibold leading-tight text-shadow-purple">
                 <span className="text-[#F97216] ">Finance.</span>
                 <br />
                 <RotatingText />
               </h1>
-              <p className="hidden sm:block text-lg md:text-[32px] mt-4  mx-auto font-[500] ">
+              <p className="hidden sm:block text-lg md:text-[32px] mt-4 mx-auto font-[500] ">
                 The fun, effective way teens learn
                 <br /> about finance.
               </p>
 
-              {/* Mobile Phone Image */}
+              {/* Mobile Phone Image - Show on screen < 640px; Hide on screen >= 640px */}
               <div className="flex justify-center mt-0 mb-0 sm:hidden">
                 <div className="relative w-[250px] h-[400px] ">
                   <Image
@@ -99,7 +99,7 @@ const Herosection1: React.FC = () => {
               </div>
 
               {/* Buttons */}
-              <div className="flex sm:flex-row justify-center lg:justify-start gap-4 mt-6">
+              <div className="flex sm:flex-row justify-center sm:justify-start gap-4 mt-6">
                 <div className="relative">
                   {/* Shadow overlay - behind the button */}
                   <div
@@ -167,11 +167,11 @@ const Herosection1: React.FC = () => {
         {/* Section 2: Light Background */}
         <section
           id="section-2"
-          className="w-full bg-[#FFF8ECBF] md:px-20 py-16 sm:pt-32"
+          className="w-full bg-[#FFF8ECBF] py-16 sm:pt-32 px-4 sm:px-6 md:px-8 lg:px-12"
         >
-          <div className="flex flex-col lg:flex-row items-center justify-between mx-auto gap-12">
+          <div className="flex flex-col lg:flex-row items-center sm:items-start justify-between mx-auto gap-12">
             {/* Text Content */}
-            <div className="w-full lg:w-1/2 text-left z-10">
+            <div className="w-full sm:w-2/3 text-left z-10">
               <h2 className="font-poppins font-medium text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-[120%] text-[#2F2F2F]">
                 We&apos;re changing the <br /> way teens learn about finance
               </h2>
@@ -221,10 +221,10 @@ const Herosection1: React.FC = () => {
         </section>
 
         {/* Desktop Phone Image - Hidden on Mobile */}
-        <div className="hidden sm:block absolute top-75 xl:top-30 z-0 sm:right-1/2 sm:translate-x-1/2 lg:right-[20px] lg:translate-x-0">
-          <div className="relative sm:w-[280px] sm:h-[460px] md:w-[350px] md:h-[575px] lg:w-[600px] lg:h-[985px] xl:w-[800px] xl:h-[1100px]">
+        <div className="hidden sm:block absolute top-20 md:top-28 lg:top-28 xl:top-28 z-0 right-[-100px] md:right-[-80px] lg:right-[-40px] xl:right-[-20px]">
+          <div className="relative sm:w-[280px] sm:h-[460px] md:w-[350px] md:h-[575px] lg:w-[420px] lg:h-[690px] xl:w-[480px] xl:h-[788px]">
             <Image
-              src="/phone.svg"
+              src="/phone.png"
               alt="FiPet Phone App"
               fill
               className="object-contain drop-shadow-2xl"
