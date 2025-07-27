@@ -57,7 +57,7 @@ const Herosection1: React.FC = () => {
         setIndex((prev) => (prev + 1) % texts.length);
       }, 2000);
       return () => clearInterval(interval);
-    }, []);
+    }, [texts.length]);
 
     return (
       <span className="text-[#FFF8EC] inline-block whitespace-nowrap transition-opacity duration-500 ease-in-out">
@@ -74,19 +74,19 @@ const Herosection1: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-1 px-3 lg:pt-5">
             {/* Text Content */}
             <div className="text-[#FFF8EC]   z-10 w-auto">
-              <h1 className="text-[54px] sm:text-[60px] lg:text-[100px] font-poppins font-semibold sm:font-semibold leading-tight text-shadow-purple">
+              <h1 className="text-[54px] sm:text-[60px]  md:text-[80px] lg:text-[100px] font-poppins font-semibold sm:font-semibold leading-tight text-shadow-purple">
                 <span className="text-[#F97216] ">Finance.</span>
                 <br />
                 <RotatingText />
               </h1>
-              <p className="hidden sm:block text-lg md:text-[32px] mt-4  mx-auto font-[500] ">
+              <p className="hidden lg:block text-lg md:text-[32px] mt-4  mx-auto font-[500] ">
                 The fun, effective way teens learn
                 <br /> about finance.
               </p>
 
               {/* Mobile Phone Image */}
-              <div className="flex justify-center mt-0 mb-0 sm:hidden">
-                <div className="relative w-[250px] h-[400px] ">
+              <div className="flex justify-center mt-0 mb-0 lg:hidden">
+                <div className="relative w-[250px] h-[400px] sm:w-[280px] sm:h-[460px] md:w-[350px] md:h-[575px]  ">
                   <Image
                     src="/phone.png"
                     alt="FiPet Phone App"
@@ -220,8 +220,8 @@ const Herosection1: React.FC = () => {
         </section>
 
         {/* Desktop Phone Image - Hidden on Mobile */}
-        <div className="hidden sm:block absolute top-75 xl:top-30 z-0 sm:right-1/2 sm:translate-x-1/2 lg:right-[20px] lg:translate-x-0">
-          <div className="relative sm:w-[280px] sm:h-[460px] md:w-[350px] md:h-[575px] lg:w-[600px] lg:h-[985px] xl:w-[800px] xl:h-[1100px]">
+        <div className="hidden lg:block absolute top-110  xl:top-0 z-0 sm:right-1/2 sm:translate-x-1/2 lg:right-[0px] lg:translate-x-30   2xl:translate-x-10">
+          <div className="relative lg:w-[700px] lg:h-[985px] xl:w-[800px] xl:h-[1100px]">
             <Image
               src="/phone.svg"
               alt="FiPet Phone App"
@@ -231,7 +231,7 @@ const Herosection1: React.FC = () => {
             />
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
