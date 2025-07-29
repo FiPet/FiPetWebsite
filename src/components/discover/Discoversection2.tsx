@@ -85,10 +85,10 @@ const Discoversection2: React.FC = () => {
         padding: "2rem",
       }}
     >
-      <div className="max-w-screen-xl mx-auto px-6 py-12 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-8 items-center mx-auto w-[90%]">
-          <div className="text-white space-y-6 md:px-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-medium pb-6">
+      <div className="max-w-screen-xl sm:mx-auto px-0 py-12 md:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="text-white space-y-6 md:pr-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
               Fipet is a mobile app where teens learn personal finance through
               five-minute interactive quests
             </h2>
@@ -101,20 +101,13 @@ const Discoversection2: React.FC = () => {
               Duolingo, Pokémon, and Gen Z media habits.
             </p>
           </div>
-          <div className="hidden sm:block">
-            <Image
-              src="/assets/discover/lady.png"
-              alt="playing with phone"
-              width={340}
-              height={400}
-            />
-          </div>
+          <div className="hidden md:block w-full h-80 bg-gray-200 rounded-lg shadow-lg "></div>
         </div>
 
         {/* Phone gallery with scroll animation */}
         <div className="mt-12 overflow-x-auto hide-scrollbar">
           <div
-            className="flex space-x-4 md:space-x-6 transition-transform duration-75 ease-out"
+            className="flex space-x-2 sm:space-x-3 md:space-x-6 transition-transform duration-75 ease-out"
             style={{
               transform: `translateX(-${scrollY * 0.3}px)`,
             }}
@@ -125,7 +118,7 @@ const Discoversection2: React.FC = () => {
               return (
                 <div
                   key={i}
-                  className="flex-shrink-0 w-24 h-40 md:w-48 md:h-64 rounded-lg overflow-hidden relative group hover:scale-101 transition-transform duration-300"
+                  className="flex-shrink-0 w-43 h-105 sm:w-48 sm:h-105 rounded-lg overflow-hidden relative group hover:scale-101 transition-transform duration-300"
                 >
                   {imageExists ? (
                     <Image
@@ -133,7 +126,7 @@ const Discoversection2: React.FC = () => {
                       alt={`Phone ${i + 1}`}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 96px, 192px"
+                      sizes="(width: 768px) 96px, 192px"
                     />
                   ) : (
                     // Fallback content when no image is available

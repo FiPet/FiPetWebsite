@@ -74,20 +74,20 @@ const Herosection1: React.FC = () => {
         <section className="relative  px-4 sm:px-6 md:px-8 lg:px-12 py-10 bg-gradient-to-r from-[#BB48FD] to-[#0A61E4] rounded-[30px] shadow-inner">
           <div className="flex flex-col lg:flex-row items-center sm:items-start justify-between gap-10 py-1 lg:py-5">
             {/* Text Content */}
-            <div className="text-[#FFF8EC] z-10 w-auto">
-              <h1 className="text-[54px] sm:text-[60px] lg:text-[100px] font-poppins font-semibold leading-tight text-shadow-purple">
+            <div className="text-[#FFF8EC]   z-10 w-auto">
+              <h1 className="text-[54px] sm:text-[60px]  md:text-[80px] lg:text-[100px] font-poppins font-semibold sm:font-semibold leading-tight text-shadow-purple">
                 <span className="text-[#F97216] ">Finance.</span>
                 <br />
                 <RotatingText />
               </h1>
-              <p className="hidden sm:block text-lg md:text-[32px] mt-4 mx-auto font-[500] ">
+              <p className="hidden lg:block text-lg md:text-[32px] mt-4  mx-auto font-[500] ">
                 The fun, effective way teens learn
                 <br /> about finance.
               </p>
 
-              {/* Mobile Phone Image - Show on screen < 640px; Hide on screen >= 640px */}
-              <div className="flex justify-center mt-0 mb-0 sm:hidden">
-                <div className="relative w-[250px] h-[400px] ">
+              {/* Mobile Phone Image */}
+              <div className="flex justify-center mt-0 mb-0 lg:hidden">
+                <div className="relative w-[250px] h-[400px] sm:w-[280px] sm:h-[460px] md:w-[350px] md:h-[575px]  ">
                   <Image
                     src="/phone.png"
                     alt="FiPet Phone App"
@@ -221,8 +221,8 @@ const Herosection1: React.FC = () => {
         </section>
 
         {/* Desktop Phone Image - Hidden on Mobile */}
-        <div className="hidden sm:block absolute top-20 md:top-28 lg:top-28 xl:top-28 z-0 right-[-100px] md:right-[-80px] lg:right-[-40px] xl:right-[-20px]">
-          <div className="relative sm:w-[280px] sm:h-[460px] md:w-[350px] md:h-[575px] lg:w-[420px] lg:h-[690px] xl:w-[480px] xl:h-[788px]">
+        <div className="hidden lg:block absolute top-110  xl:top-0 z-0 sm:right-1/2 sm:translate-x-1/2 lg:right-[0px] lg:translate-x-30   2xl:translate-x-10">
+          <div className="relative lg:w-[700px] lg:h-[985px] xl:w-[800px] xl:h-[1100px]">
             <Image
               src="/phone.png"
               alt="FiPet Phone App"
