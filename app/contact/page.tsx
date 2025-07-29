@@ -1,13 +1,12 @@
 // app/contact/page.tsx
-import React from 'react';
+import React from "react";
 import "../globals.css";
-import Image from 'next/image';
-
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white p-6 sm:p-12 flex items-center justify-center">
-      <div className="relative w-full max-w-4xl bg-orange-500 rounded-2xl p-5 sm:p-8 md:p-10 shadow-xl">
+      <div className="relative w-full max-w-4xl bg-[linear-gradient(90deg,rgba(249,114,22,1)_0%,rgba(249,159,22,1)_100%)] rounded-2xl p-5 sm:p-8 md:p-10 shadow-xl">
         {/* Close button */}
         {/* <button
           onClick={() => router.back()}
@@ -31,7 +30,13 @@ export default function ContactPage() {
         </div>
 
         <div className="flex justify-center space-x-6 mt-8 text-white text-2xl">
-          <a href="#" aria-label="LinkedIn" className="hover:text-gray-200  glass-button-orange  rounded-[50%] p-2">
+          <a
+            href="https://www.linkedin.com/company/fipet/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="hover:text-gray-200 glass-button-orange rounded-[50%] p-2"
+          >
             <Image
               src="/assets/linkedin/linkedin.png"
               alt="LinkedIn Icon"
@@ -39,7 +44,13 @@ export default function ContactPage() {
               height={40}
             />
           </a>
-          <a href="#" aria-label="Instagram" className="hover:text-gray-200  glass-button-orange  rounded-[50%] p-2">
+          <a
+            href="https://www.instagram.com/fipetapp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hover:text-gray-200 glass-button-orange rounded-[50%] p-2"
+          >
             <Image
               src="/assets/instagram/02_White_Glyph/instagram.png"
               alt="Instagram Icon"
@@ -47,7 +58,13 @@ export default function ContactPage() {
               height={40}
             />
           </a>
-          <a href="#" aria-label="TikTok" className="hover:text-gray-200 glass-button-orange  rounded-[50%] p-2">
+          <a
+            href="https://www.tiktok.com/@fipetapp?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            className="hover:text-gray-200 glass-button-orange rounded-[50%] p-2"
+          >
             <Image
               src="/assets/tiktok/tiktok.png"
               alt="TikTok Icon"

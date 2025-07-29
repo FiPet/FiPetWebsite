@@ -47,14 +47,14 @@ export const teams: TeamMember[] = [
 
 export const teamHeads: TeamHead[] = [
   {
-    photo: "/pfp1.png",
+    photo: "/assets/team/team-sameer.png",
     name: "Sameer Bhatia",
     title: "CEO",
     linkedinLink: "https://www.linkedin.com/",
     socialLink: "https://instagram.com",
   },
   {
-    photo: "/pfp1.png",
+    photo: "/assets/team/team-soham.jpg",
     name: "Soham Kundu",
     title: "CTO",
     linkedinLink: "https://www.linkedin.com/",
@@ -75,7 +75,7 @@ export const teamHeads: TeamHead[] = [
     socialLink: "https://instagram.com",
   },
   {
-    photo: "/pfp1.png",
+    photo: "/assets/team/team-ben.png",
     name: "Ben Hurwitz",
     title: "Head of Graphic Design",
     linkedinLink: "https://www.linkedin.com/",
