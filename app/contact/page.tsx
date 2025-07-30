@@ -21,12 +21,17 @@ export default function ContactPage() {
         </h1>
 
         <div className="space-y-4 md:p-15">
-          <button className="w-full py-3 b bg-opacity-20 font-medium rounded-full  glass-button-orange">
+          {/* <button className="w-full py-3 b bg-opacity-20 font-medium rounded-full  glass-button-orange">
             Partnerships, press, or investing
-          </button>
-          <button className="w-full py-3 glass-button-orange  rounded-full  font-medium ">
+          </button> */}
+          <a
+            href="https://www.linkedin.com/company/fipet/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3 glass-button-orange rounded-full font-medium"
+          >
             Apply as a creator intern
-          </button>
+          </a>
         </div>
 
         <div className="flex justify-center space-x-6 mt-8 text-white text-2xl">

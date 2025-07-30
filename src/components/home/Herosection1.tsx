@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Herosection1: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -117,9 +118,12 @@ const Herosection1: React.FC = () => {
                       filter: "blur(12px)",
                     }}
                   />
-                  <button className="relative z-10 w-[148px] h-[45px] sm:w-[189px] sm:h-auto md:w-[255px] text-white font-medium py-2 px-6 rounded-[20px] sm:rounded-full glass-button flex items-center justify-center">
-                    Explore
-                  </button>
+                  <Link
+                    href="/discover"
+                    className="relative z-10 w-[148px] h-[45px] sm:w-[189px] sm:h-auto md:w-[255px] text-white font-medium py-2 px-6 rounded-[20px] sm:rounded-full glass-button flex items-center justify-center"
+                  >
+                    Discover
+                  </Link>
                 </div>
                 <div className="relative">
                   {/* Shadow overlay - behind the button */}
@@ -138,10 +142,15 @@ const Herosection1: React.FC = () => {
                       filter: "blur(12px)",
                     }}
                   />
-                  <button className="relative z-10 w-[148px] h-[45px] sm:w-[189px] sm:h-auto md:w-[255px] text-white font-medium py-2 px-6 rounded-[20px] sm:rounded-full glass-button flex items-center justify-center">
+                  <a
+                    href="https://tally.so/r/mB5ex4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative z-10 w-[148px] h-[45px] sm:w-[189px] sm:h-auto md:w-[255px] text-white font-medium py-2 px-6 rounded-[20px] sm:rounded-full glass-button flex items-center justify-center"
+                  >
                     <span className="sm:hidden">Join Waitlist</span>
                     <span className="hidden sm:inline">Join the Waitlist</span>
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -189,7 +198,8 @@ const Herosection1: React.FC = () => {
 
               <div className="flex justify-start mt-8">
                 {/* Mobile Button */}
-                <button
+                <Link
+                  href="/discover"
                   className="block sm:hidden h-[45px] w-[168px] text-white font-medium py-2 px-6 rounded-[20px] text-center border border-white/20"
                   style={{
                     background:
@@ -199,10 +209,11 @@ const Herosection1: React.FC = () => {
                   }}
                 >
                   Learn More
-                </button>
+                </Link>
 
                 {/* Desktop Button */}
-                <button
+                <Link
+                  href="/discover"
                   className="hidden sm:block h-[41px] w-[180px] text-white font-medium py-2 px-6 rounded-full text-center"
                   style={{
                     background:
@@ -214,7 +225,7 @@ const Herosection1: React.FC = () => {
                   }}
                 >
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>

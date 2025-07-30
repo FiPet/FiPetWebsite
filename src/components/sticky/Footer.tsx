@@ -23,11 +23,6 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2 text-gray-200 font-thin">
                 <li>
-                  <Link href="/" className="hover:underline">
-                    About Us
-                  </Link>
-                </li>
-                <li>
                   <Link href="/team" className="hover:underline">
                     Team
                   </Link>
@@ -41,8 +36,8 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2 text-gray-200 font-thin text-[16px]">
                 <li>
-                  <a href="#" className="hover:underline">
-                    Explore
+                  <a href="/discover" className="hover:underline">
+                    Discover
                   </a>
                 </li>
                 <li>

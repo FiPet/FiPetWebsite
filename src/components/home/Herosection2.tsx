@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const Herosection2: React.FC = () => {
   const imgWidth = 600;
@@ -77,8 +76,11 @@ const Herosection2: React.FC = () => {
               against your friends and learn real finance skills <br /> all from
               your fingertips.
             </p>
-            <div
-              className=" sm:h-auto md:w-[300px] mt-10 px-8 py-3 flex items-center justify-center text-white rounded-full transition-opacity hover:opacity-90"
+            <a
+              href="https://tally.so/r/mB5ex4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sm:h-auto md:w-[300px] mt-10 px-8 py-3 flex items-center justify-center text-white rounded-full transition-opacity hover:opacity-90"
               style={{
                 background: "linear-gradient(90deg, #AB4AFB 0%, #8350F5 100%)",
                 boxShadow: `
@@ -88,14 +90,8 @@ const Herosection2: React.FC = () => {
                 `,
               }}
             >
-              <Link
-                href="https://tally.so/r/mB5ex4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Join the Waitlist
-              </Link>
-            </div>
+              Join the Waitlist
+            </a>
           </div>
 
           {/* Desktop Image block */}
@@ -143,7 +139,9 @@ const Herosection2: React.FC = () => {
           {/* Button under image for mobile */}
 
           <a
-            href="#"
+            href="https://tally.so/r/mB5ex4"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow-lg hover:opacity-90 transition-opacity"
           >
             Join the Waitlist

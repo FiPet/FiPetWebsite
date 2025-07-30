@@ -101,7 +101,14 @@ const Discoversection2: React.FC = () => {
               Duolingo, Pokémon, and Gen Z media habits.
             </p>
           </div>
-          <div className="hidden md:block w-full h-80 bg-gray-200 rounded-lg shadow-lg "></div>
+          <div className="hidden md:block w-80 h-80 relative overflow-hidden shadow-lg mx-auto">
+            <Image
+              src="/assets/discover/lady.png"
+              alt="Discover Lady"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
         {/* Phone gallery with scroll animation */}

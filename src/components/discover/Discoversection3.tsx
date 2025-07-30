@@ -18,12 +18,12 @@ export default function DiscoverSection3() {
 
       {/* release date */}
       <div
-        className="mt-8 w-[88%] ml-auto py-3 pl-8 pr-8 
+        className="mt-8 w-[90%] sm:w-[70%] md:w-[50%] max-w-[600px] mx-auto py-4 md:py-5 px-6 sm:px-8 md:px-12
           bg-[radial-gradient(ellipse_at_center,rgba(223,214,221,0.9)_60%,rgba(223,214,221,0)_100%)]
-          backdrop-blur-[2px] border border-white rounded-l-full shadow-lg flex justify-start"
+          backdrop-blur-[2px] border border-white rounded-full shadow-lg flex justify-center"
       >
         <span
-          className="font-semibold ml-24 text-3xl bg-clip-text text-transparent"
+          className="font-semibold text-3xl bg-clip-text text-transparent text-center"
           style={{
             backgroundImage: "linear-gradient(to right, #F97916, #F99816)",
           }}
@@ -103,12 +103,18 @@ export default function DiscoverSection3() {
           />
           <DiscoverActionButton
             text="Apply as a creator intern"
-            onClick={() => {}}
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/company/fipet/",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
           />
-          <DiscoverActionButton
+          {/* <DiscoverActionButton
             text="Partnerships, press, or investing"
             onClick={() => {}}
-          />
+          /> */}
         </div>
       </div>
     </div>
