@@ -4,13 +4,13 @@ const appDevTeam: TeamMember = {
   image: "/assets/discover/phone.svg",
   teamName: "App Development",
   teamMembers: [
-    "Arnav Mohanty",
     "Jiwon Kim",
-    "Mayank Lastname",
+    "Mayank Jain",
     "Nathan Su",
     "Nirvan Daram",
     "Ryan Sauers",
-    "Varshitha",
+    "Varshitha Reddy",
+    "Mohnish Nanthakumar",
   ],
 };
 
@@ -23,13 +23,7 @@ const uiTeam: TeamMember = {
 const marketingTeam: TeamMember = {
   image: "/assets/discover/camera.svg",
   teamName: "Marketing",
-  teamMembers: [
-    "Ben Scruton",
-    "Dhruv Nagpal",
-    "Jayla Daniels",
-    "Noah Balicki",
-    "Sophia Zaydon",
-  ],
+  teamMembers: ["Ben Scruton", "Noah Balicki", "Sophia Zaydon"],
 };
 
 const webDevTeam: TeamMember = {
@@ -38,16 +32,23 @@ const webDevTeam: TeamMember = {
   teamMembers: ["Jitesh Dnyandeo", "Sameer Mohammed", "Shengkuo Lin"],
 };
 
+const ventureTeam: TeamMember = {
+  image: "/assets/discover/rocket.svg",
+  teamName: "Venture",
+  teamMembers: ["Pranav Gopisetty", "Robin Risasi"],
+};
+
 export const teams: TeamMember[] = [
   appDevTeam,
   uiTeam,
   marketingTeam,
   webDevTeam,
+  // ventureTeam,
 ];
 
 export const teamHeads: TeamHead[] = [
   {
-    photo: "/assets/team/team-sameer.png",
+    photo: "/assets/team/team-sameer2.png",
     name: "Sameer Bhatia",
     title: "CEO",
     linkedinLink: "https://www.linkedin.com/in/sameer-bhatia-176807243/",
@@ -73,13 +74,6 @@ export const teamHeads: TeamHead[] = [
     title: "Head of Mobile App Dev",
     linkedinLink: "https://www.linkedin.com/in/archit-mandepally-4a1767302/",
     socialLink: "https://www.instagram.com/architmandepally/",
-  },
-  {
-    photo: "/assets/team/team-ben.png",
-    name: "Ben Hurwitz",
-    title: "Head of Graphic Design",
-    linkedinLink: "https://www.linkedin.com/in/benjaminhurwitz/",
-    socialLink: "https://www.instagram.com/ben.hurwitz/",
   },
   {
     photo: "/assets/team/team-jayla.png",
