@@ -32,11 +32,11 @@ const webDevTeam: TeamMember = {
   teamMembers: ["Jitesh Dnyandeo", "Sameer Mohammed", "Shengkuo Lin"],
 };
 
-const ventureTeam: TeamMember = {
-  image: "/assets/discover/rocket.svg",
-  teamName: "Venture",
-  teamMembers: ["Pranav Gopisetty", "Robin Risasi"],
-};
+// const ventureTeam: TeamMember = {
+//   image: "/assets/discover/rocket.svg",
+//   teamName: "Venture",
+//   teamMembers: ["Pranav Gopisetty", "Robin Risasi"],
+// };
 
 export const teams: TeamMember[] = [
   appDevTeam,
