@@ -48,7 +48,7 @@ export const teams: TeamMember[] = [
 
 export const teamHeads: TeamHead[] = [
   {
-    photo: "/assets/team/team-sameer2.png",
+    photo: "/assets/team/team-sameer1.png",
     name: "Sameer Bhatia",
     title: "CEO",
     linkedinLink: "https://www.linkedin.com/in/sameer-bhatia-176807243/",
