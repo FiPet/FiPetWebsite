@@ -39,39 +39,24 @@ export default function TeamPage() {
 
             {/* DESKTOP TOP ROW: 4 cards */}
             <div className="hidden sm:grid grid-cols-8 gap-x-12 gap-y-6">
-              {/* --- TOP ROW --- */}
+              {/* --- TOP ROW (4 cards) --- */}
               {/* Each card spans 2 of the 8 columns */}
-              <div className="col-span-2">
-                {" "}
-                <TeamHeadCard {...teamHeads[0]} />{" "}
-              </div>
-              <div className="col-span-2">
-                {" "}
-                <TeamHeadCard {...teamHeads[1]} />{" "}
-              </div>
-              <div className="col-span-2">
-                {" "}
-                <TeamHeadCard {...teamHeads[2]} />{" "}
-              </div>
-              <div className="col-span-2">
-                {" "}
-                <TeamHeadCard {...teamHeads[3]} />{" "}
-              </div>
+              {teamHeads.slice(0, 4).map((head, index) => (
+                <div className="col-span-2" key={index}>
+                  <TeamHeadCard {...head} />
+                </div>
+              ))}
 
-              {/* --- BOTTOM ROW --- */}
+              {/* --- BOTTOM ROW (3 cards) --- */}
               {/* We use col-start-2 to create a manual offset, centering the 3 cards */}
-              <div className="col-start-2 col-span-2">
-                {" "}
-                <TeamHeadCard {...teamHeads[4]} />{" "}
-              </div>
-              <div className="col-span-2">
-                {" "}
-                <TeamHeadCard {...teamHeads[5]} />{" "}
-              </div>
-              <div className="col-span-2">
-                {" "}
-                <TeamHeadCard {...teamHeads[6]} />{" "}
-              </div>
+              {teamHeads.slice(4, 7).map((head, index) => (
+                <div
+                  className={`col-span-2 ${index === 0 ? "col-start-2" : ""}`}
+                  key={index}
+                >
+                  <TeamHeadCard {...head} />
+                </div>
+              ))}
             </div>
           </div>
         </div>
