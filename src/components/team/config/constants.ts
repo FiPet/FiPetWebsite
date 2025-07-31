@@ -28,22 +28,22 @@ const marketingTeam: TeamMember = {
 
 const webDevTeam: TeamMember = {
   image: "/assets/discover/arrow.svg",
-  teamName: "Website Dev",
+  teamName: "Website Development",
   teamMembers: ["Jitesh Dnyandeo", "Sameer Mohammed", "Shengkuo Lin"],
 };
 
-// const ventureTeam: TeamMember = {
-//   image: "/assets/discover/rocket.svg",
-//   teamName: "Venture",
-//   teamMembers: ["Pranav Gopisetty", "Robin Risasi"],
-// };
+const ventureTeam: TeamMember = {
+  image: "/assets/discover/rocket.svg",
+  teamName: "Venture",
+  teamMembers: ["Pranav Gopisetty", "Robin Risasi"],
+};
 
 export const teams: TeamMember[] = [
   appDevTeam,
   uiTeam,
   marketingTeam,
   webDevTeam,
-  // ventureTeam,
+  ventureTeam,
 ];
 
 export const teamHeads: TeamHead[] = [
@@ -55,7 +55,7 @@ export const teamHeads: TeamHead[] = [
     socialLink: "https://www.instagram.com/_sameerbhatia/",
   },
   {
-    photo: "/assets/team/team-soham.jpg",
+    photo: "/assets/team/team-soham.jpeg",
     name: "Soham Kundu",
     title: "CTO",
     linkedinLink: "https://www.linkedin.com/in/sohamkundu27/",

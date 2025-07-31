@@ -76,19 +76,20 @@ export default function TeamPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-[8%] mt-6">
-          {teams.map((team, idx) => (
-            <div key={idx}>
-              <TeamMembersPanel {...team} />
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+          {teams.map((team) => (
+            <TeamMembersPanel
+              key={team.teamName}
+              image={team.image}
+              teamName={team.teamName}
+              teamMembers={team.teamMembers}
+            />
           ))}
         </div>
 
-        <div className="flex justify-center my-6 mt-16 sm:hidden">
-          <div className="w-3/4 h-3 bg-[#EDEDED] rounded-full shadow-md "></div>
-        </div>
+        <div className="flex justify-center my-6 mt-16 sm:hidden"></div>
 
-        <div className="hidden sm:block">
+        <div className="block">
           <CorpSocialLinks />
         </div>
       </div>

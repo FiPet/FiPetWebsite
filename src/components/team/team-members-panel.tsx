@@ -7,8 +7,8 @@ export default function TeamMembersPanel({
   teamMembers,
 }: TeamMember) {
   return (
-    <div className="flex flex-col items-start sm:items-center">
-      <div className="w-32 h-32 rounded-full bg-gradient-to-r from-[#8F48FD] to-[#8FA9FD] flex items-center justify-center my-4 aspect-square">
+    <div className="flex flex-col items-center p-4 rounded-lg w-full sm:w-64">
+      <div className="w-24 h-24 rounded-full bg-gradient-to-r from-[#8F48FD] to-[#8FA9FD] flex items-center justify-center mb-3">
         <Image
           src={image}
           alt={teamName}
@@ -18,14 +18,16 @@ export default function TeamMembersPanel({
           priority
         />
       </div>
-      <h6 className="text-lg font-semibold text-[#F97216] my-2">{teamName}</h6>
-      {teamMembers.map((member, idx) => {
-        return (
-          <p key={idx} className="font-normal">
+      <h6 className="text-lg font-semibold text-[#F97216] mb-2 text-center">
+        {teamName}
+      </h6>
+      <div className="text-center space-y-1">
+        {teamMembers.map((member, idx) => (
+          <p key={idx} className="font-normal text-sm sm:text-base">
             {member}
           </p>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 }
