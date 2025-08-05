@@ -17,7 +17,12 @@ const appDevTeam: TeamMember = {
 const uiTeam: TeamMember = {
   image: "/assets/discover/pen.svg",
   teamName: "UI/Graphic Design",
-  teamMembers: ["Divya Mulpuri", "Julienne Strydom", "Katherine Garland"],
+  teamMembers: [
+    "Divya Mulpuri",
+    "Julienne Strydom",
+    "Katherine Garland",
+    "Japleen Dang",
+  ],
 };
 
 const marketingTeam: TeamMember = {
