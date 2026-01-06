@@ -10,9 +10,9 @@ export default function DiscoverSection3() {
       {/* title */}
       <div className="text-center">
         <h1 className="text-6xl sm:text-8xl font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent inline-block">
-          Whats coming
+          Deployed on the
           <br />
-          next?
+          App Store!
         </h1>
       </div>
 
@@ -28,7 +28,7 @@ export default function DiscoverSection3() {
             backgroundImage: "linear-gradient(to right, #F97916, #F99816)",
           }}
         >
-          App Store launch in August 2025
+          Updates every week
         </span>
       </div>
 
