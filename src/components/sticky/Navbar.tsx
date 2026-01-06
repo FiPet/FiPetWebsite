@@ -56,11 +56,11 @@ const Navbar: React.FC = () => {
         {/* Right side: Join Button (always visible) */}
         <div className="text-purple-500 capitalize text-[16px]  ">
           <Link
-            href="https://tally.so/r/mB5ex4"
+            href="https://apps.apple.com/us/app/fipet/id6751675558"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Join the waitlist!
+            Download here
           </Link>
         </div>
       </div>

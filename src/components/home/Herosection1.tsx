@@ -143,13 +143,13 @@ const Herosection1: React.FC = () => {
                     }}
                   />
                   <a
-                    href="https://tally.so/r/mB5ex4"
+                    href="https://apps.apple.com/us/app/fipet/id6751675558"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative z-10 w-[148px] h-[45px] sm:w-[189px] sm:h-auto md:w-[255px] text-white font-medium py-2 px-6 rounded-[20px] sm:rounded-full glass-button flex items-center justify-center"
                   >
-                    <span className="sm:hidden">Join Waitlist</span>
-                    <span className="hidden sm:inline">Join the Waitlist</span>
+                    <span className="sm:hidden">Download</span>
+                    <span className="hidden sm:inline">Download here</span>
                   </a>
                 </div>
               </div>

@@ -92,10 +92,10 @@ export default function DiscoverSection3() {
             Get involved!
           </p>
           <DiscoverActionButton
-            text="Join the waitlist"
+            text="Download here"
             onClick={() => {
               window.open(
-                "https://tally.so/r/mB5ex4",
+                "https://apps.apple.com/us/app/fipet/id6751675558",
                 "_blank",
                 "noopener,noreferrer"
               );

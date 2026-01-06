@@ -77,7 +77,7 @@ const Herosection2: React.FC = () => {
               your fingertips.
             </p>
             <a
-              href="https://tally.so/r/mB5ex4"
+              href="https://apps.apple.com/us/app/fipet/id6751675558"
               target="_blank"
               rel="noopener noreferrer"
               className="sm:h-auto md:w-[300px] mt-10 px-8 py-3 flex items-center justify-center text-white rounded-full transition-opacity hover:opacity-90"
@@ -90,7 +90,7 @@ const Herosection2: React.FC = () => {
                 `,
               }}
             >
-              Join the Waitlist
+              Download here
             </a>
           </div>
 
@@ -139,12 +139,12 @@ const Herosection2: React.FC = () => {
           {/* Button under image for mobile */}
 
           <a
-            href="https://tally.so/r/mB5ex4"
+            href="https://apps.apple.com/us/app/fipet/id6751675558"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow-lg hover:opacity-90 transition-opacity"
           >
-            Join the Waitlist
+            Download here
           </a>
         </div>
 
