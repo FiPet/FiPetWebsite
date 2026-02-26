@@ -28,8 +28,8 @@ export default function TeamHeadCard({
   linkedinLink,
   socialLink,
 }: TeamHead) {
-  const photoSizeSm = 192; // px
-  const photoSizeLg = 256; // px
+  const photoSizeSm = 140; // px
+  const photoSizeLg = 200; // px
   return (
     <div className={`rounded-2xl flex flex-col items-start`}>
       {/* profile photo and gradient border */}

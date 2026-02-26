@@ -20,40 +20,28 @@ export default function TeamPage() {
           className={`w-screen ml-[calc(50%-50vw)] my-12 py-12 ${styles.gradientContainer}`}
         >
           <div className="mx-auto max-w-6xl px-8 py-6">
-            {/* MOBILE: 2‑column grid, all 7 cards */}
-            <div className="grid grid-cols-2 sm:hidden gap-x-12 gap-y-6">
-              {teamHeads.map((head, i) =>
-                i === teamHeads.length - 1 ? (
-                  <div key={i} className="col-span-2 flex justify-center">
-                    <div style={{ maxWidth: "calc((100% - 3rem)/2)" }}>
-                      <TeamHeadCard {...head} />
-                    </div>
-                  </div>
-                ) : (
-                  <div key={i}>
-                    <TeamHeadCard {...head} />
-                  </div>
-                )
-              )}
+            {/* MOBILE: 2‑column grid, all 6 cards */}
+            <div className="grid grid-cols-2 sm:hidden gap-x-6 gap-y-6">
+              {teamHeads.map((head, i) => (
+                <div key={i} className="max-w-[180px] mx-auto">
+                  <TeamHeadCard {...head} />
+                </div>
+              ))}
             </div>
 
-            {/* DESKTOP TOP ROW: 4 cards */}
-            <div className="hidden sm:grid grid-cols-8 gap-x-12 gap-y-6">
-              {/* --- TOP ROW (4 cards) --- */}
-              {/* Each card spans 2 of the 8 columns */}
-              {teamHeads.slice(0, 4).map((head, index) => (
-                <div className="col-span-2" key={index}>
+            {/* DESKTOP: 2 rows of 3 cards */}
+            <div className="hidden sm:grid grid-cols-12 gap-x-6 gap-y-8 justify-items-center">
+              {/* --- TOP ROW (3 cards) --- */}
+              {/* Each card spans 4 of the 12 columns */}
+              {teamHeads.slice(0, 3).map((head, index) => (
+                <div className="col-span-4 max-w-[240px]" key={index}>
                   <TeamHeadCard {...head} />
                 </div>
               ))}
 
               {/* --- BOTTOM ROW (3 cards) --- */}
-              {/* We use col-start-2 to create a manual offset, centering the 3 cards */}
-              {teamHeads.slice(4, 7).map((head, index) => (
-                <div
-                  className={`col-span-2 ${index === 0 ? "col-start-2" : ""}`}
-                  key={index}
-                >
+              {teamHeads.slice(3, 6).map((head, index) => (
+                <div className="col-span-4 max-w-[240px]" key={index}>
                   <TeamHeadCard {...head} />
                 </div>
               ))}

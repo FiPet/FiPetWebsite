@@ -81,13 +81,6 @@ export const teamHeads: TeamHead[] = [
     socialLink: "https://www.instagram.com/architmandepally/",
   },
   {
-    photo: "/assets/team/team-jayla.png",
-    name: "Jayla Daniels",
-    title: "Head of Marketing",
-    linkedinLink: "https://www.linkedin.com/in/jayla-daniels/",
-    socialLink: "https://www.instagram.com/jaylaasd/",
-  },
-  {
     photo: "/assets/team/team-sahil.JPG",
     name: "Sahil Khunt ",
     title: "Head of Website Dev ",
