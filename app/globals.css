@@ -9,7 +9,8 @@
 
 html,
 body {
-  overscroll-behavior: none;
+  /* Only suppress horizontal overscroll so trackpad vertical scroll works normally */
+  overscroll-behavior-x: none;
   overflow-x: hidden;
 }
 
