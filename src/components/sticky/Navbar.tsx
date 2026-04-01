@@ -53,14 +53,22 @@ const Navbar: React.FC = () => {
           <Link href="/contact">Contact Us</Link>
         </div>
 
-        {/* Right side: Join Button (always visible) */}
-        <div className="text-purple-500 capitalize text-[16px]  ">
+        {/* Right side: Giveaway CTA + App Store link */}
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0 text-purple-500 capitalize text-[14px] sm:text-[16px]">
           <Link
             href="https://apps.apple.com/us/app/fipet/id6751675558"
             target="_blank"
             rel="noopener noreferrer"
           >
             Download here
+          </Link>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeRi2wrIC12A398YcZW7sMe2xH_LbfCMqbM0yjY43yib5OjCQ/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="giveaway-btn-hover rounded-full bg-gradient-to-r from-[#8F48FD] to-[#7C3AED] px-3 py-1.5 sm:px-4 sm:py-2 text-white font-medium normal-case shadow-sm hover:opacity-90 transition-opacity whitespace-nowrap"
+          >
+            Enter Giveaway
           </Link>
         </div>
       </div>
@@ -77,6 +85,15 @@ const Navbar: React.FC = () => {
             </Link>
             <Link href="/team" onClick={() => setMobileOpen(false)}>
               Team
+            </Link>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeRi2wrIC12A398YcZW7sMe2xH_LbfCMqbM0yjY43yib5OjCQ/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="giveaway-btn-hover rounded-full bg-gradient-to-r from-[#8F48FD] to-[#7C3AED] px-4 py-2 text-white font-medium normal-case text-center w-fit"
+            >
+              Enter Giveaway
             </Link>
             {/* <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact Us</Link> */}
           </div>

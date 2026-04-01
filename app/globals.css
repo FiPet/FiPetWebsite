@@ -137,3 +137,36 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@keyframes giveaway-shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate3d(-2px, 0, 0) rotate(-0.8deg);
+  }
+  40% {
+    transform: translate3d(2px, 0, 0) rotate(0.8deg);
+  }
+  60% {
+    transform: translate3d(-2px, 0, 0) rotate(-0.8deg);
+  }
+  80% {
+    transform: translate3d(2px, 0, 0) rotate(0.8deg);
+  }
+}
+
+.giveaway-btn-hover {
+  display: inline-block;
+}
+
+.giveaway-btn-hover:hover {
+  animation: giveaway-shake 0.55s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .giveaway-btn-hover:hover {
+    animation: none;
+  }
+}
